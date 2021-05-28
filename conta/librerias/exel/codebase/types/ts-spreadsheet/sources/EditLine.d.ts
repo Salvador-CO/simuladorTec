@@ -1,0 +1,34 @@
+import { View } from "../../ts-common/view";
+export declare class EditLine extends View {
+    private _htmlEvents;
+    private _value;
+    private _colored;
+    private _locked;
+    private _input;
+    private _prevStyles;
+    private _prevCursorPosition;
+    private _isMath;
+    private _suggest;
+    private _store;
+    private _presedEnter;
+    private _isEdit;
+    constructor(element?: string | HTMLElement, config?: any);
+    navigate(key: "arrowDown" | "arrowUp" | "enter"): boolean;
+    setAtCursor(value: string, from: number, to: number, cursor: number): void;
+    focus(): void;
+    blur(): void;
+    lock(): void;
+    unlock(): void;
+    setValue(val: string): void;
+    _setValue(val: string): void;
+    getValue(): string;
+    clean(): void;
+    destructor(): void;
+    getInput(): HTMLInputElement;
+    setCursor(cursor: number): void;
+    isCellExpected(cell: string, needToSet: boolean, editor: HTMLInputElement): number;
+    private _render;
+    private _parseColors;
+    private _setStyles;
+    private _removeStyles;
+}

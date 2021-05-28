@@ -1,0 +1,27 @@
+<div id="editor1">
+	<p>My filename should be 'mi-archivo.pdf'.</p>
+</div>
+
+<div id="editor2">
+	<p>And mine - 'mi-archivo.pdf'.</p>
+</div>
+
+<div id="editor3">
+	<h1>mi-archivo</h1>
+</div>
+
+<script>
+	exportPdfUtils.initManualTest();
+
+	CKEDITOR.replace( 'editor1', exportPdfUtils.getDefaultConfig( 'manual' ) );
+
+	CKEDITOR.replace( 'editor2', exportPdfUtils.getDefaultConfig( 'manual', {
+		exportPdf_fileName: 'mi-archivo.pdf',
+	} ) );
+
+	var editor3 = CKEDITOR.replace( 'editor3', exportPdfUtils.getDefaultConfig( 'manual', {
+		exportPdf_fileName: function(editor3) {
+			return editor3.editable().findOne( 'h1' ).getText() + '.pdf';
+		}
+	} ) );
+</script>

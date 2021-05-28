@@ -1,0 +1,43 @@
+.cuerpo{
+				
+				margin-left: 2%; 
+				margin-right: 2%; 
+				
+				position: relative;
+
+			}
+			.left{
+				margin-left: 10%; 
+				float: left;
+				width: 40%;
+				align-items: center;
+				
+			}
+			.right{
+				
+				float: left;
+				width: 35%;
+				text-align: left;
+				align-items: center;
+			}
+			.derecha{
+				text-align: right;
+
+			}
+			.linea{
+				height: 10%;
+				border-bottom:  1px solid;
+				align-items: center;
+			}
+			
+			h4{
+				margin: none;
+				padding: none;
+			}
+			input{
+				width: 190px;
+				height: 100%;
+				border: none;
+				text-align: center;
+				align-items: center;
+			}
