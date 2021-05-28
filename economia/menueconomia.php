@@ -200,7 +200,7 @@
                         <p><h3 class="modal-title col-11 text-center">Calculadora de soluciones de ecuaciones cuadráticas</h3></p>
                 </div>
               <div class="modal-body">
-                <iframe src="formulas/formulagen.php" width="100%" height="550px" style="border:0px"></iframe>
+                <iframe src="formulas/formulagen.php" width="100%" height="450px" style="border:0px"></iframe>
               </div>      
             </div>
           </div>
