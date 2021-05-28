@@ -172,9 +172,14 @@
                                     </nav>
                                 </div>
                         <!--fin del menu de Economia-->
-                       
+                        <div class="sb-sidenav-menu-heading">Extras </div> 
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#forgen" >
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-square-root-alt"></i>
+                                </div>
+                               Formula General
+                            </a>
 
-                <!--fin del menu desplegable principal-->   	
                 	</div>
     			</div>
                 <!--footer del menu-->
@@ -183,8 +188,24 @@
                     <font size="1" face="Garamond" color="#E5E7E9">Copyright &copy; Todos los derechos reservados <b>Tecnológico Nacional de México</b></font>
                     </div>
     			</div><!--fin footer del menu-->
+
     		</nav>
     	</div><!--fin del menu lateral-->
+        <!--modal economia-->
+        <div id="forgen" class="modal fade" style="z-index: 1400;">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Calculadora de soluciones de ecuaciones cuadráticas</h3></p>
+                </div>
+              <div class="modal-body">
+                <iframe src="formulas/formulagen.php" width="100%" height="550px" style="border:0px"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
+
         <div id="layoutSidenav_content">
         <main>
             <!--continua en los archivos-->
