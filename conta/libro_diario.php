@@ -266,7 +266,7 @@
 		                <input type="number" step = "any" name="abono" class="form-control" value="0">
 		            </div>
 		            <div class="form-group col-md-3">
-		                <label for="nom_us">Resgistrado por: </label>
+		                <label for="nom_us">Registrado por: </label>
 		                <input type="text" name="nom_us" class="form-control" readonly  value="<?php echo $nombre;?>">
 		            </div>
 		        </div> <!-- cierre de form-row -->
