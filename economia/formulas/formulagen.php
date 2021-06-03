@@ -8,10 +8,6 @@
 <style>
 	 #status,#titulo  { padding:10px; background:#88C4FF; color:#000; font-weight:bold; font-size:12px; margin-bottom:10px; display:none; width:100%; }
 #titulo { padding:10px; background:#88C4FF; color:#000; font-weight:bold; font-size:12px; margin-bottom:10px; display:none; width:90%; }
-.tabla{
-	margin-right: 3%;
-	margin-left: 3%;
-}
 .formulario{
 	margin-right: 3%;
 	margin-left: 3%;
