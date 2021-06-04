@@ -1,3 +1,6 @@
+<?php include("../conexion.php"); 
+
+?>
 <html>
 	<head>
         <meta charset="utf-8" />
@@ -9,49 +12,37 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <title>Regresión lineal</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-	</head>
-	<script type="text/javascript">
-		$("#btnPrueba").click(function(){
-			prueba();
-		});
-		
-		function prueba(){
-	    Highcharts.chart('contenedor ', {
-	          title: {
-	            text: 'Scatter plot with regression line'
-	          },
-	          xAxis: {
-	            min: -0.5,
-	            max: 5.5
-	          },
-	          yAxis: {
-	            min: 0
-	          },
-	          series: [{
-	            type: 'line',
-	            name: 'Regression Line',
-	            data: [[0, 1.11], [5, 4.51]],
-	            marker: {
-	              enabled: false
-	            },
-	            states: {
-	              hover: {
-	                lineWidth: 0
-	              }
-	            },
-	            enableMouseTracking: false
-	          }, {
-	            type: 'scatter',
-	            name: 'Observations',
-	            data: [],
-	            marker: {
-	              radius: 4
-	            }
-	          }]
-	        });    
-	}
-	</script>
+		<script>
+    		$(function(){	
+				$("#adicional").on('click', function(){
+					$("#tabla tbody tr:eq(0)").clone().removeClass('fila-fija').appendTo("#tabla");
+				});		
+				$(document).on("click",".eliminar",function(){
+					var parent = $(this).parents().get(0);
+					$(parent).remove();
+				});
+			});
+				
+		</script>
+		<style type="text/css">
+		    .tablaDiario{
+		      margin-left: 30%;
+		      margin-right: 50%;
+		      width: 40%;
+		      
+		    }
+		    td{
+		      border-bottom:  #000  2px;
+		    }
+		    #tcargo{
+		      border-top: 1px solid;
+		    } 
+		    .tablaiva{
+		    	width: 100%;
+		    }
+	  	</style>
 
+	</head>
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
@@ -59,10 +50,110 @@
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active">Pagina Principal</li>
 		</ol>
+	<!-- tabla input muestras -->
+	<?php
+        $sql ="SELECT * FROM regresion";
+        $consulta = mysqli_query($conexion, $sql);
+        if($consulta->num_rows === 0) {
+        ?>
+	<table align="center">
+		<thead>
+			<th>Ingresa el número de muestras:</th>
+			
+		</thead>
+		<tbody>
+		<tr>
+			<form action="regresionlineal.php" method="POST">
+				<td><p><input type="text" name="numero" class="form-control" placeholder="Número de muestras" /></p></td>
+				<td><p>&nbsp;<input type="submit" value="Agregar" class="btn btn-primary"/></p></td>
+			</form>
+		</tr>
+		</tbody>
+	</table>
+	<?php } ?>
+
+
+	<!-- formularios para llenar tabla -->
+	<form method="POST" action="datos/insertar.php" >
+		<?php
+            $sql ="SELECT * FROM regresion";
+            $consulta = mysqli_query($conexion, $sql);
+            if($consulta->num_rows === 0) {
+            ?>
+		<table align="center" id="tabla">
+			<?php
+			if(isset($_POST['numero'])){
+				$a = $_POST['numero'];
+			}else{
+				$a = 0;
+			}
+			for ($i=0; $i < $a ; $i++) { 
+						
+			?>
+			<thead>
+				<th colspan="2">Ingresa el año:</th>
+				<th>Ingresa la demanda:</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" name="fecha[]" class="form-control" placeholder="Año"/></td>
+					<td><input type="text" name="valor1[]" class="form-control" placeholder="Año" value="<?php echo $i ?>"/></td>
+					<td><input type="text" name="valor2[]" class="form-control" placeholder="Demanda"/></td>
+					<td><input type="text" name="nom_us[]" class="form-control" placeholder="nombre de usuario" hidden="true"/></td>
+				</tr>
+			</tbody>
+			<?php } ?>
+		</table>
+	
+	<br>
+	<div class="btn-der" align="center">
+		<input type="submit" name="insertar" value="Insertar" class="btn btn-info"/>	
+	</div>
+<?php }else{
+		echo " ";
+	} ?>
+	</form>
+
+	<!-- tabla datos insertados -->
+	<div class="tablaDiario">
+	<table class="table table-hover" align="center">
+		<?php
+            $sql ="SELECT * FROM regresion";
+            $consulta = mysqli_query($conexion, $sql);
+            if($consulta->num_rows === 0) {
+            	
+            }else{
+        ?>
+        <thead>
+		<tr style="background-color:#3b6c9b; color: #ffff;">
+			<th colspan="2" style="border: 1px solid #3b6c9b;"><center>Año</center></th>
+			<th style="border: 1px solid #3b6c9b;"><center>Demanda</center></th>
+		 </tr>
+		</thead>
+		<tbody>
+		<tr>
+		 	<?php
+		 	$rownumber=0;
+		    while($rowedit = mysqli_fetch_array($consulta)){
+		    	$rownumber++;
+		    	$fecha = $rowedit["fecha"];
+		    	$valor1 = $rowedit["valor1"];
+		    	$valor2 = $rowedit["valor2"];
+		  	?>
+		 	<td style="border: 1px solid #3b6c9b;"><center><?php echo $fecha; ?></center></td>
+		 	<td style="border: 1px solid #3b6c9b;"><center><?php echo $valor1; ?></center></td>
+		 	<td style="border: 1px solid #3b6c9b;"><center><?php echo $valor2; ?></center></td>
+		</tr>
+			<?php } }?>
+		</tbody>	
+	</table>
+	</div>
+
+
 		<!--Contenido dentro del div con margen-->
 		<div class="text-center">
         <div class="btn-group" role="group" aria-label="">
-            <button id="btnPrueba" type="button" class="btn btn-danger">Gráfico de Prueba</button>            
+            <button id="btnPrueba" type="button" class="btn btn-danger">Gráfica Regresión Lineal</button>            
         </div>
       	</div>
       	<!--En este container se muestran los gráficos-->
@@ -91,8 +182,8 @@
         </div>
         </div>
         </div>
-
 	<!---->
+	
 	   	</main>
 		</div>
 		</div>
