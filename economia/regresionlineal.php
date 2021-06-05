@@ -52,7 +52,7 @@
 		</ol>
 	<!-- tabla input muestras -->
 	<?php
-        $sql ="SELECT * FROM regresion";
+        $sql ="SELECT * FROM regresion WHERE nom_us= '$nombre'";
         $consulta = mysqli_query($conexion, $sql);
         if($consulta->num_rows === 0) {
         ?>
@@ -64,7 +64,7 @@
 		<tbody>
 		<tr>
 			<form action="regresionlineal.php" method="POST">
-				<td><p><input type="text" name="numero" class="form-control" placeholder="Número de muestras" /></p></td>
+				<td><p><input type="text" name="numero" class="form-control" placeholder="Número de muestras" required  /></p></td>
 				<td><p>&nbsp;<input type="submit" value="Agregar" class="btn btn-primary"/></p></td>
 			</form>
 		</tr>
@@ -76,7 +76,7 @@
 	<!-- formularios para llenar tabla -->
 	<form method="POST" action="datos/insertar.php" >
 		<?php
-            $sql ="SELECT * FROM regresion";
+            $sql ="SELECT * FROM regresion WHERE nom_us= '$nombre'";
             $consulta = mysqli_query($conexion, $sql);
             if($consulta->num_rows === 0) {
             ?>
@@ -96,10 +96,10 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="text" name="fecha[]" class="form-control" placeholder="Año"/></td>
-					<td><input type="text" name="valor1[]" class="form-control" placeholder="Año" value="<?php echo $i ?>"/></td>
-					<td><input type="text" name="valor2[]" class="form-control" placeholder="Demanda"/></td>
-					<td><input type="text" name="nom_us[]" class="form-control" placeholder="nombre de usuario" hidden="true"/></td>
+					<td><input type="text" name="fecha[]" class="form-control" placeholder="Año" required /></td>
+					<td><input type="text" name="valor1[]" class="form-control" value="<?php echo $i ?>" required hidden="true"/></td>
+					<td><input type="text" name="valor2[]" class="form-control" placeholder="Demanda" required /></td>
+					<td><input type="text" name="nom_us[]" class="form-control" placeholder="nombre de usuario" value="<?php echo $nombre; ?>" required /></td>
 				</tr>
 			</tbody>
 			<?php } ?>
@@ -118,12 +118,20 @@
 	<div class="tablaDiario">
 	<table class="table table-hover" align="center">
 		<?php
-            $sql ="SELECT * FROM regresion";
+            $sql ="SELECT * FROM regresion WHERE nom_us= '$nombre'";
             $consulta = mysqli_query($conexion, $sql);
             if($consulta->num_rows === 0) {
             	
             }else{
         ?>
+        <div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+			<ul class="list-unstyled" style="margin-bottom: 0;">
+				<li><center><strong>Tabulación de las muestras</strong></center></li>
+            </ul>
+            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button> -->
+    	</div>
         <thead>
 		<tr style="background-color:#3b6c9b; color: #ffff;">
 			<th colspan="2" style="border: 1px solid #3b6c9b;"><center>Año</center></th>
@@ -146,6 +154,56 @@
 		</tr>
 			<?php } }?>
 		</tbody>	
+	</table>
+	</div>
+
+	<!-- Ecuación resultante de la regresión lineal -->
+	<div class="tablaDiario">
+	<table class="table" align="center">
+		<?php 	
+			$sql ="SELECT * FROM regresion WHERE nom_us= '$nombre'";
+			$consulta = mysqli_query($conexion, $sql);
+			if($consulta->num_rows === 0) {
+            	
+            }else{
+		?>
+		<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+			<ul class="list-unstyled" style="margin-bottom: 0;">
+				<li>Ecuación resultante: <i><strong>y = a.x + b</strong></i>.</li>
+            </ul>
+    	</div>
+
+		<tbody>
+			<?php 
+				$sqln = "SELECT COUNT(valor1) FROM regresion WHERE nom_us= $nombre";
+				$resultadon = $conexion->query($sqln);
+
+
+				
+				$sqlp1 ="SELECT AVG(valor1) FROM regresion WHERE nom_us= $nombre";
+				$resultado1 = $conexion->query($sqlp1);
+				$valor1 = $resultado1->fetch_assoc();
+				
+				$sqlp2 ="SELECT AVG(valor2) FROM regresion WHERE nom_us= $nombre";
+				$resultado2 = $conexion->query($sqlp2);
+				$valor2 = $resultado2->fetch_assoc();
+				
+				$sqlv3 ="SELECT SUM(valor3) FROM regresion WHERE nom_us= $nombre";
+				$resultado3 = $conexion->query($sqlv3);
+				$valor3 = $resultado3->fetch_assoc();
+				
+				$sqlv4 ="SELECT SUM(valor4) FROM regresion WHERE nom_us= $nombre";
+				$resultado4 = $conexion->query($sqlv4);
+				$valor4 = $resultado4->fetch_assoc();
+
+				echo $numero."<br>";
+				echo $valor1."<br>";
+				echo $valor2."<br>";
+				echo $valor3."<br>";
+				echo $valor4."<br>";
+			?>
+		</tbody>
+		<?php } ?>
 	</table>
 	</div>
 
