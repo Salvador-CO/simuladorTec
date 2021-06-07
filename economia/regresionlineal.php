@@ -43,6 +43,8 @@
 	  	</style>
 
 	</head>
+
+
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
@@ -51,11 +53,13 @@
 	        <li class="breadcrumb-item active">Pagina Principal</li>
 		</ol>
 	<!-- tabla input muestras -->
+
 	<?php
         $sql ="SELECT * FROM regresion WHERE nom_us= '$nombre'";
         $consulta = mysqli_query($conexion, $sql);
         if($consulta->num_rows === 0) {
         ?>
+
 	<table align="center">
 		<thead>
 			<th>Ingresa el número de muestras:</th>
@@ -63,8 +67,16 @@
 		</thead>
 		<tbody>
 		<tr>
+			<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+					<ul class="list-unstyled" style="margin-bottom: 0;">
+						<li><strong>Nota: </strong>Agrega el numero de muestras a calcular. Debe ser mayor a 1.  </center></li>
+		            </ul>
+		            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		              <span aria-hidden="true">×</span>
+		            </button>
+    			</div>
 			<form action="regresionlineal.php" method="POST">
-				<td><p><input type="text" name="numero" class="form-control" placeholder="Número de muestras" required  /></p></td>
+				<td><p><input type="number" name="numero" class="form-control" placeholder="Número de muestras" required pattern="[2-9]{1,5}"></p></td>
 				<td><p>&nbsp;<input type="submit" value="Agregar" class="btn btn-primary"/></p></td>
 			</form>
 		</tr>
@@ -80,6 +92,7 @@
             $consulta = mysqli_query($conexion, $sql);
             if($consulta->num_rows === 0) {
             ?>
+        
 		<table align="center" id="tabla">
 			<?php
 			if(isset($_POST['numero'])){
@@ -99,20 +112,28 @@
 					<td><input type="text" name="fecha[]" class="form-control" placeholder="Año" required /></td>
 					<td><input type="text" name="valor1[]" class="form-control" value="<?php echo $i ?>" required hidden="true"/></td>
 					<td><input type="text" name="valor2[]" class="form-control" placeholder="Demanda" required /></td>
-					<td><input type="text" name="nom_us[]" class="form-control" placeholder="nombre de usuario" value="<?php echo $nombre; ?>" required /></td>
+					<td><input type="text" name="nom_us[]" class="form-control" placeholder="nombre de usuario" value="<?php echo $nombre; ?>" required hidden="true"/></td>
 				</tr>
 			</tbody>
+			<tfoot>
+				<tr>
+					<td>
+					
+					</td>
+				</tr>
+			</tfoot>
 			<?php } ?>
 		</table>
+		
+		<br>
+		<div class="btn-der" align="center">
+			<input type="submit" name="insertar" value="Insertar" class="btn btn-info"/>	
+		</div>
+		
+	</form>	
 	
-	<br>
-	<div class="btn-der" align="center">
-		<input type="submit" name="insertar" value="Insertar" class="btn btn-info"/>	
-	</div>
-<?php }else{
-		echo " ";
-	} ?>
-	</form>
+	<?php } ?>
+
 
 	<!-- tabla datos insertados -->
 	<div class="tablaDiario">
@@ -155,6 +176,20 @@
 			<?php } }?>
 		</tbody>	
 	</table>
+	<?php 
+		$sql ="SELECT * FROM regresion WHERE nom_us= '$nombre'";
+        $consulta = mysqli_query($conexion, $sql);
+         if($consulta->num_rows === 0) {
+            	
+            }else{
+            ?>
+			<div align="center">
+				<a href="datos/eliminar.php" class="btn btn-danger" style="color: #ffff;">
+		            <i class="fas fa-trash-alt"></i>
+		        </a>
+			</div>
+	<?php }	?>
+	<br>
 	</div>
 
 	<!-- Ecuación resultante de la regresión lineal -->
@@ -175,32 +210,57 @@
 
 		<tbody>
 			<?php 
-				$sqln = "SELECT COUNT(valor1) FROM regresion WHERE nom_us= $nombre";
-				$resultadon = $conexion->query($sqln);
+				$sqln = "SELECT COUNT(valor1) AS contar FROM regresion WHERE nom_us= '$nombre'";
+				$resulta = mysqli_query($conexion, $sqln);
+				while ($row = mysqli_fetch_assoc($resulta)){
+					$numero = $row['contar'];
+					//echo "N= ".$numero."<br>";
+				}
+				
+				$sqlp1 = "SELECT AVG(valor1) FROM regresion WHERE nom_us= '$nombre'";
+				$resulta = mysqli_query($conexion, $sqlp1);
+				while ($row1 = mysqli_fetch_assoc($resulta)){
+					$va1 = $row1['AVG(valor1)'];
+					//echo "x= ".$va1."<br>";
+				}
+				
+				$sqlp2 ="SELECT AVG(valor2) FROM regresion WHERE nom_us = '$nombre'";
+				$resultad = mysqli_query($conexion, $sqlp2);
+				while ($row = mysqli_fetch_assoc($resultad)){
+					$va2 = $row['AVG(valor2)'];
+					//echo "y= ".$va2."<br>";
+				}
+				
+				$sqlv3 ="SELECT SUM(valor3) FROM regresion WHERE nom_us= '$nombre'";
+				$resultado = mysqli_query($conexion, $sqlv3);
+				while ($row = mysqli_fetch_assoc($resultado)){
+					$va3 = $row['SUM(valor3)'];
+					//echo "x= ".$va3."<br>";	
+				}
+				
+				$sqlv4 ="SELECT SUM(valor4) FROM regresion WHERE nom_us= '$nombre'";
+				$resultado = mysqli_query($conexion, $sqlv4);
+				while ($row = mysqli_fetch_assoc($resultado)){
+					$va4 = $row['SUM(valor4)'];
+					//echo "xy= ".$va4."<br>";	
+				}
+				$o1= ($va3/$numero)-($va1*$va1);
+				//echo "ox= ".$o1."<br>";
 
+				$o2= ($va4/$numero)-($va1*$va2);
+				//echo "oxy= ".$o2."<br>";
 
-				
-				$sqlp1 ="SELECT AVG(valor1) FROM regresion WHERE nom_us= $nombre";
-				$resultado1 = $conexion->query($sqlp1);
-				$valor1 = $resultado1->fetch_assoc();
-				
-				$sqlp2 ="SELECT AVG(valor2) FROM regresion WHERE nom_us= $nombre";
-				$resultado2 = $conexion->query($sqlp2);
-				$valor2 = $resultado2->fetch_assoc();
-				
-				$sqlv3 ="SELECT SUM(valor3) FROM regresion WHERE nom_us= $nombre";
-				$resultado3 = $conexion->query($sqlv3);
-				$valor3 = $resultado3->fetch_assoc();
-				
-				$sqlv4 ="SELECT SUM(valor4) FROM regresion WHERE nom_us= $nombre";
-				$resultado4 = $conexion->query($sqlv4);
-				$valor4 = $resultado4->fetch_assoc();
+				//echo "Y - ".$va2." = ".$o2/$o1."(X - ".$va1.")"."<br>";
 
-				echo $numero."<br>";
-				echo $valor1."<br>";
-				echo $valor2."<br>";
-				echo $valor3."<br>";
-				echo $valor4."<br>";
+				$div=$o2/$o1;
+				
+				$c= $div * $va1;
+				//echo $c."<br>";
+
+				$resta = $c-$va2;
+				//echo "Y = ". $div."X"." - ".$c ."-".$va2."<br>";
+
+				echo "<center><i> Y = ". $div."x"." + ".($resta*-1)."<br></i></center>";
 			?>
 		</tbody>
 		<?php } ?>
@@ -211,40 +271,34 @@
 		<!--Contenido dentro del div con margen-->
 		<div class="text-center">
         <div class="btn-group" role="group" aria-label="">
-            <button id="btnPrueba" type="button" class="btn btn-danger">Gráfica Regresión Lineal</button>            
+            <a  class="btn btn-danger" data-toggle="modal" data-target="#btnPrueba" style="color: #ffff;">
+            Gráfica
+            </a>    
         </div>
       	</div>
-      	<!--En este container se muestran los gráficos-->
-        <div id="contenedor" style="min-width: 320px; height: 400px; margin: 0 auto"></div>
-              
-      	<!--Modal para gráficos-->    
-        <div id="modal-1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-             <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                    </button>
-                </div>        
-                <div class="modal-body"> 
-                	
-                <figure class="highcharts-figure">
-	            <div id="contenedor"></div>
-	            <p class="highcharts-description">
-	                Chart showing how a line series can be used to show a computed
-	                regression line for a dataset. The source data for the regression line
-	                is visualized as a scatter series.
-	            </p>
-        		</figure>
-                </div>                    
+
+        <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Gráfico de dispersión con línea de regresión</h3></p>
+                </div>
+              <div class="modal-body">
+              	<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+					<ul class="list-unstyled" style="margin-bottom: 0;">
+						<li><strong>Nota: </strong>No olvides descargar la grafica en el formato que requieras.  <i class="fas fa-bars"></i> </center></li>
+		            </ul>
+		            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		              <span aria-hidden="true">×</span>
+		            </button>
+    			</div>
+                <iframe src="grafico.php" width="100%" height="450px" style="border:0px"></iframe>
+              </div>      
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-	<!---->
-	
-	   	</main>
-		</div>
-		</div>
+
  		<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="../js/scripts.js"></script>
@@ -253,11 +307,7 @@
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/datatables-demo.js"></script>
-        <script src="pluggins/Highcharts_7.0.3/code/highcharts.js"></script>
-        <script src="pluggins/Highcharts_7.0.3/code/modules/exporting.js"></script>
-        <script src="pluggins/Highcharts_7.0.3/code/modules/export-data.js"></script>        
-        
+
         <script src="pluggins/Highcharts_7.0.3/code/modules/drilldown.js"></script>
 	</body>
 </html>

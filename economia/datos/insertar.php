@@ -1,7 +1,7 @@
 <?php
 	include("../../conexion.php");
 
-	if(isset($_POST['insertar']))
+	if(isset($_POST['fecha']))
 	{
 		$items2 = ($_POST['fecha']);
 		$items3 = ($_POST['valor1']);
@@ -39,5 +39,12 @@
 		}
 		 header("Location: ../regresionlineal.php");
 		}
+		?>
+		<script type="text/javascript">
+
+				alert("Debes de ingresar el numero de muestras primero");
+				window.location.href='../regresionlineal.php';
+			</script>
+		<?php
 
 ?>
