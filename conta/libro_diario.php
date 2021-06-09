@@ -89,6 +89,15 @@
 			.active1:after {
 			    content: "\2796"; /* Unicode character for "minus" sign (-) */
 			}
+			.btn-circle {
+			    width: 30px;
+			    height: 30px;
+			    padding: 6px 0px;
+			    border-radius: 15px;
+			    text-align: center;
+			    font-size: 12px;
+			    line-height: 1.42857;
+			}
 		</style>
 		<!--  -->
 
@@ -99,7 +108,25 @@
 
 		<!--Titulo-->
 	<div class="container-fluid">
-		    <center><h1 class="mt-4">Libro Diario</h1></center>
+		    <center><h1 class="mt-4">Libro Diario <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba" title="¡Da click para obtener mas información!"><i class="fas fa-question"></i> </button></h1></center>
+		    
+
+		<div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
+                </div>
+              <div class="modal-body">
+              	
+
+                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
+
 		    <ol class="breadcrumb mb-4">
 		    	<li class="breadcrumb-item active"><b>Instrucciones:</b> En el siguiente apartado podrás realizar el registro del libro diario con los datos dados en el Reactivo Integrador Multidisciplina (RIM), en donde deberás crear: 1) Un encabezado, 2) El registro del asiento, 3) Notas al pie del registro del asiento. Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”. </li>
 		    </ol>
@@ -137,11 +164,21 @@
 	<!-- titulo -->
 	<div class="registro">
 
+
             <?php
             $sql ="SELECT * FROM encabezado WHERE nom_us='$nombre'";
             $consulta = mysqli_query($conexion, $sql);
             if($consulta->num_rows === 0) {
               ?>
+              <!-- Nota del encabezado -->
+			<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+				<ul class="list-unstyled" style="margin-bottom: 0;">
+					<li><strong>1) </strong> Registra el encabezado de tu ejercicio.</li>
+	            </ul>
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	              <span aria-hidden="true"><p><strong>x</strong></p></span>
+	            </button>
+	    	</div>
               	<!-- ven modal -->
 				<div >
 					<h4 class="accordion1" style="text-align: center;"><font size="3"  color="#fff"> Encabezado </font></h4>
@@ -221,6 +258,15 @@
 	
 	<!--  -->
 	<div class="registro">
+		 <!-- Nota del del los registros de asiento -->
+			<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+				<ul class="list-unstyled" style="margin-bottom: 0;">
+					<li><strong>2) </strong> Registra los asientos correspondientes a tu ejercicio.</li>
+	            </ul>
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	              <span aria-hidden="true"><p><strong>x</strong></p></span>
+	            </button>
+	    	</div>
 		    <h4 class="accordion1" style="text-align: center;"><font size="3"  color="#fff">  Registro de asiento(s) </font></h4>
 		    <div class="panel1">
 		    <form id="myForm" action="diario/guardar.php" method="POST">

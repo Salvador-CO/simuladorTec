@@ -68,13 +68,40 @@
 			
 			
 		}
+		.btn-circle {
+          width: 30px;
+          height: 30px;
+          padding: 6px 0px;
+          border-radius: 15px;
+          text-align: center;
+          font-size: 12px;
+          line-height: 1.42857;
+      }
 	</style>
 	<!-- progreso -->
 
 	<?php require "menuconta.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Tarjetas de almacén</h1></center>
+	    	<center><h1 class="mt-4">Tarjetas de almacén  <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
+
+
+		<!-- modal de instrccines -->
+      <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+          <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
+                </div>
+              <div class="modal-body">
+               <!--   contenido -->
+                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+              </div>      
+            </div>
+          </div>
+      </div>
+
 		    <ol class="breadcrumb mb-4">
 		         <li class="breadcrumb-item active"><b>Instrucciones:</b> En el siguiente apartado podrás realizar la tarjeta de almacen que se te indique en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”. </li>
 			</ol>
