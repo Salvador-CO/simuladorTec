@@ -185,6 +185,12 @@
                                 </div>
                                Derivada
                             </a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#integral" >
+                                <div class="sb-nav-link-icon">
+                                    <img src="../iconos/integral.png" width="20px" height="20px">
+                                </div>
+                               Integral definida
+                            </a>
 
                 	</div>
     			</div>
@@ -220,7 +226,21 @@
                         <p><h3 class="modal-title col-11 text-center">Derivadas <i>U<sup>n</sup></i></h3></p>
                 </div>
               <div class="modal-body">
-                <iframe src="formulas/derivada.php" width="100%" height="450px" style="border:0px"></iframe>
+                <iframe src="derivada/index.html" width="100%" height="450px" style="border:none"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
+
+        <div id="integral" class="modal fade" style="z-index: 1400;">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 65px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Integrales definidas</h3></p>
+                </div>
+              <div class="modal-body">
+                <iframe src="integral/index.html" width="100%" height="450px" style="border:none"></iframe>
               </div>      
             </div>
           </div>

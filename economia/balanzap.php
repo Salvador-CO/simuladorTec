@@ -563,7 +563,7 @@
             	
             	<div class="table-responsive">
         			<center>
-          				<a href="pdf/balanzap.php" target="_blank"> <button  title="Descargar Balanza de pagos.pdf" type="button" class="btn btn-outline-secondary"><img src="../iconos/download-solid.svg" width="18px;"></i></button></a>
+          				<a href="pdf/balpagos.php" target="_blank"> <button  title="Descargar Balanza de pagos.pdf" type="button" class="btn btn-outline-secondary"><img src="../iconos/download-solid.svg" width="18px;"></i></button></a>
           
           				<a href="balanza/eliminar.php?nom=<?php echo $nombre; ?>">
         				<button title="Eliminar cuentas de libro mayor" type="button" class="btn btn-outline-danger"><img src="../iconos/eliminar.svg" width="18px;"></button></a>

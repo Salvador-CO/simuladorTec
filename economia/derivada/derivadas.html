@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+<form name="formulario">         
+  Enter function:
+  <input name="func" type="text" size="15" />           
+  <input type="submit" value="Differentiate" />   
+</form>
+<div id="text">  </div>
+
+
+
+</body>
+	<script src="http://nerdamer.com/js/nerdamer.core.js"></script>
+	<script src="http://nerdamer.com/js/Algebra.js"></script>
+	<script src="http://nerdamer.com/js/Calculus.js"></script>
+	<script type="text/javascript">
+		document.forms.formulario.addEventListener('submit', function(e) {
+		e.preventDefault(); // Don't send form
+		var expr = this.elements.func.value,
+		diff = nerdamer.getCore().Calculus.diff(nerdamer(expr).symbol).text();
+		document.getElementById('text').textContent = diff;
+		});
+	</script>
+</html>
