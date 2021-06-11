@@ -27,7 +27,7 @@
 	<?php require "menuconta.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h4 class="mt-4">Formatos de</h4><h2> "Estado de Resultados"    <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h2></center>
+	    	<center><h4 class="mt-4">Formatos de</h4><h2> "Estado de Resultados"    <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba" title="¡Da clic para obtener mas información!"><i class="fas fa-question"></i> </button></h2></center>
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active">      </li>
 		</ol>
@@ -47,7 +47,7 @@
             </div>
           </div>
       </div>
-      
+
 		<font size="2"><p style="text-align: justify;"></p></font>
 		<!--Contenedor general-->
 		 <div class="row justify-content-center" >

@@ -37,7 +37,7 @@
 	<?php require "menuconta.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Estado de Variaciones en el Capital Contable <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
+	    	<center><h1 class="mt-4">Estado de Variaciones en el Capital Contable <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question" title="¡Da clic para obtener mas información!"></i> </button></h1></center>
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active"><b>Instrucciones:</b> En el siguiente apartado se visualiza el reporte del estado de variaciones en el capital contable, pudiendo descargarlo en formato "Excel", para así editarlo conforme tu Reactivo Integrador Multidisciplina (RIM). Recuerda que al terminar de realizar tu ejercicio deberás subirlo en formato PDF en el apartado “Carga de archivos”. </li>
 		</ol>
@@ -47,7 +47,7 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
-                            <p><h3 class="modal-title col-11 text-center">Libro Diario</h3></p>
+                            <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
                     </div>
                   <div class="modal-body">
                    <!--   contenido -->

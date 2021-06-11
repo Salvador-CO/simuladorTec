@@ -20,9 +20,9 @@
             <ul class="list-unstyled" style="margin-bottom: 0;">
               <li><strong>Nota:</strong> Ingresa los valores de la ecuación <i><strong>a</strong> x<sup>2</sup> + <strong>b</strong>  x + <strong>c</strong> = 0 </i>.</li>
             </ul>
-            <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">×</span>
-            </button>-->
+            </button>
     </div>
 
 

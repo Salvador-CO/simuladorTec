@@ -226,6 +226,14 @@
                         <p><h3 class="modal-title col-11 text-center">Derivadas <i>U<sup>n</sup></i></h3></p>
                 </div>
               <div class="modal-body">
+                    <div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+                        <ul class="list-unstyled" style="margin-bottom: 0;">
+                          <li><strong>Nota:</strong> Para tener ayuda dirigete a la pestaña <strong>Guia</strong>.</li>
+                        </ul>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
                 <iframe src="derivada/index.html" width="100%" height="450px" style="border:none"></iframe>
               </div>      
             </div>
@@ -240,6 +248,14 @@
                         <p><h3 class="modal-title col-11 text-center">Integrales definidas</h3></p>
                 </div>
               <div class="modal-body">
+                <div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+                        <ul class="list-unstyled" style="margin-bottom: 0;">
+                          <li><strong>Nota:</strong> Para tener ayuda dirigete a la pestaña <strong>Guia</strong>.</li>
+                        </ul>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
                 <iframe src="integral/index.html" width="100%" height="450px" style="border:none"></iframe>
               </div>      
             </div>

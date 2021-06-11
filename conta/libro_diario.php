@@ -108,7 +108,7 @@
 
 		<!--Titulo-->
 	<div class="container-fluid">
-		    <center><h1 class="mt-4">Libro Diario <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba" title="¡Da click para obtener mas información!"><i class="fas fa-question"></i> </button></h1></center>
+		    <center><h1 class="mt-4">Libro Diario <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba" title="¡Da clic para obtener mas información!"><i class="fas fa-question"></i> </button></h1></center>
 		    
 
 		<div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">

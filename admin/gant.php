@@ -3,15 +3,6 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
  - daniela.rojano.r@gmail.com  - antsanchezz12@gmail.com - salvador.camposorihuela@gmail.com-->
 
 
-
-
-
-
-
-
-
-
-
 <html>
     <head>
          <!--Librerias establecidas-->
@@ -21,7 +12,7 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
-        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />         <title>Document</title>
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />         <title>Diagrama Gantt</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 
 
@@ -61,15 +52,42 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
           <script src="librerias/gant/ganttMaster.js"></script>  
         
     </head>
+    <style type="text/css">
+        .btn-circle {
+            width: 30px;
+            height: 30px;
+            padding: 6px 0px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.42857;
+        }
+    </style>
     
     <?php require "menuadmin.php" ?>
         <!--Titulo-->
-        <div class="container-fluid">
-            <center><h1 class="mt-4" color="black">Diagrama de Gantt</h1></center>
+        <div class="container-fluid" >
+            <center><h1 class="mt-4" color="black">Diagrama de Gantt <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba" title="¡Da clic para obtener mas información!"><i class="fas fa-question"></i> </button> </h1></center>
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item active" style="text-align: justify;">
                 <b> Instrucciones:</b> Diseñar el diagrama de Gantt donde se muestre la administración del tiempo de las  diferentes tareas o actividades para el logro del proyecto establecido en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
         </ol>
+                <!-- modal de las Instrucciones -->
+        <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                        <p><h1 class="modal-title col-11 text-center">Ayuda</h1></p>
+                </div>
+              <div class="modal-body">
+                
+
+                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
         
          <!--Gantt-->
          <div id="workSpace" style="padding:0px; overflow-y:auto; overflow-x:hidden;border:1px solid #e5e5e5;position:relative;margin:0 5px"></div>
