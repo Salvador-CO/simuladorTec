@@ -12,7 +12,7 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <title>Document</title>
+        <title>Área de uso general (Word)</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 		<script src="librerias/ckeditor/ckeditor.js"></script>
 	</head>
