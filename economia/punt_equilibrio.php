@@ -7,21 +7,32 @@
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <title>Document</title>
+        <title>Punto de equilibrio</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+		<style type="text/css">
+			.contenedor{
+				margin-left: 2%;
+				margin-right: 2%;
+				border: 1px solid;
+			}
+		</style>
 	</head>
 
-	<?php require "menuconta.php" ?>
+	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Diseño de Plan Estrategico</h1></center>
+	    	<center><h1 class="mt-4">Punto de equilibrio</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active">    </li>
+	        <li class="breadcrumb-item active"> </li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
-			<h1> </h1>
 		</div>
-			
+			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
+		<div class="contenedor">
+			<iframe width="100%" height="550PX" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21107&authkey=%21AFxNB1-9sLhZdgU&em=2&AllowTyping=True&ActiveCell='Punto%20de%20equilibrio'!C3&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>		
+		</div>
+		<br><br>
+
 	<!---->
 	   	</main>
 		</div>

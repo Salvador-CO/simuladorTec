@@ -191,6 +191,11 @@
                                 </div>
                                Integral definida
                             </a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#solecua" >
+                                <div class="sb-nav-link-icon">                                                                      <img src="../iconos/fx.png" width="20px" height="20px">
+                                </div>
+                               Solucionador de ecuciones
+                            </a>
 
                 	</div>
     			</div>
@@ -242,6 +247,20 @@
               <div class="modal-body">
                 <iframe src="integral/index.html" width="100%" height="450px" style="border:none"></iframe>
               </div>      
+            </div>
+          </div>
+        </div>
+
+        <div id="solecua" class="modal fade" style="z-index: 1400;">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 65px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Integrales definidas</h3></p>
+                </div>
+              <div class="modal-body">
+                    <iframe src="formulas/sol.html" width="100%" height="450px" frameborder="0"></iframe>
+                </div>      
             </div>
           </div>
         </div>

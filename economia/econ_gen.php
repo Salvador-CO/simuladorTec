@@ -123,7 +123,7 @@
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Punto de equilibrio</font>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="#">Ver panel</a>
+                        <a class="small text-white stretched-link" href="punt_equilibrio.php">Ver panel</a>
                         <div class="small text-white">
                             <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
                         </div>
