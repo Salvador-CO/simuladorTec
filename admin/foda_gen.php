@@ -3,15 +3,6 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
  - daniela.rojano.r@gmail.com  - antsanchezz12@gmail.com - salvador.camposorihuela@gmail.com-->
 
 
-
-
-
-
-
-
-
-
-
 <html>
 	<head>
         <meta charset="utf-8" />
@@ -21,27 +12,56 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <title>Document</title>
+        <title>FODA</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 	</head>
+        <style type="text/css">
+            .btn-circle {
+                width: 30px;
+                height: 30px;
+                padding: 6px 0px;
+                border-radius: 15px;
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.42857;
+            }
+        </style>
 
 	<?php require "menuadmin.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">FODA</h1></center>
+	    	<center><h1 class="mt-4">FODA <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba" title="¡Da clic para obtener mas información!"><i class="fas fa-question"></i> </button></h1></center>
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active">      </li>
-		</ol> 
+		</ol>
+
+        <!-- modal de las Instrucciones -->
+        <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
+                </div>
+              <div class="modal-body">
+                
+
+                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
+
 		<font size="2"><p style="text-align: justify;"></p></font>
 		<!--Contenedor general-->
-		 <div class="row" >
+		 <div class="row justify-content-center" >
             <div class="col-xl-3 col-md-6">
-                <div class="card bg-success text-white mb-4">
+                <div class="card bg-secondary text-white mb-4">
                     <div class="card-body">
                         <i class="fas fa-bookmark" style="color:#FFFFFF; width:15; height:15;"></i> 
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="3">Análisis FODA</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #145A32 ">
+                    <div class="card-footer d-flex align-items-center justify-content-between"  style="background: #365A7F">
                         <a class="small text-white stretched-link" href="analisisfoda.php">Ver panel</a>
                         <div class="small text-white">
                             <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
@@ -51,12 +71,12 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
             </div>
             <!--  -->
             <div class="col-xl-3 col-md-6">
-                <div class="card bg-success text-white mb-4">
+                <div class="card bg-secondary text-white mb-4">
                     <div class="card-body">
                         <i class="fas fa-bookmark"style="color:#FFFFFF; width:20; height:20;" ></i> 
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Matriz FODA</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #145A32 ">
+                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #365A7F">
                         <a class="small text-white stretched-link" href="matrizfoda.php">Ver panel</a>
                         <div class="small text-white">
                             <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>

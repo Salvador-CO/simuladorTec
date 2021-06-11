@@ -2,12 +2,6 @@
 Para cualquier duda y/o aclaración comunicarse a los correos: 
  - daniela.rojano.r@gmail.com  - antsanchezz12@gmail.com - salvador.camposorihuela@gmail.com-->
 
-
-
-
-
-
-
 <html>
 	<head>
         <meta charset="utf-8" />
@@ -24,6 +18,15 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
 				height: 500px;
 				
 			}
+			.btn-circle {
+                width: 30px;
+                height: 30px;
+                padding: 6px 0px;
+                border-radius: 15px;
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.42857;
+            }
 		</style>
 
 	<!-- librerias exel -->
@@ -41,11 +44,27 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
 	<?php require "menuadmin.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Área de uso general (Excel)</h1></center>
+	    	<center><h1 class="mt-4">Área de uso general (Excel)  <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba" title="¡Da clic para obtener mas información!"><i class="fas fa-question"></i> </button></h1></center>
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active"><b>Instrucciones: </b>Este apartado será utilizando para la solución de los ítems de carácter general, que requieran el uso de Excel, solicitados en el Reactivo Integrador Multidisciplina. (RIM) . Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
 		</ol>
 		</div>
+		<!-- modal de las Instrucciones -->
+        <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
+                </div>
+              <div class="modal-body">
+                
+
+                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
 		<!--Contenido dentro del div con margen-->
 <div class="cont">
 		<section class="dhx_sample-container">

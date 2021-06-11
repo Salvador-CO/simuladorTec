@@ -32,7 +32,7 @@
 		</ol> 
 
          <!-- modal de instruccines -->
-        <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+        <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba" title="¡Da clic para obtener mas información!">
             <div class="modal-dialog modal-lg" role="dialog" >
                 <!-- Modal content-->
                 <div class="modal-content">
