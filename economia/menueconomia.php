@@ -165,14 +165,26 @@
                             </a>
                                 <div class="collapse" id="economia" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="../economia/operaciones.php">Operaciones</a>
-                                        <a class="nav-link" href="../economia/graficos.php">Graficas</a>
-                                        <a class="nav-link" href="../economia/demproductos.php">Demanda de un producto</a>
-                                        <a class="nav-link" href="../economia/calmatrices.php">Cálculo de matrices</a>
+                                        <a class="nav-link" href="espacioredaccion.php">Area de uso general</a>
+                                        <a class="nav-link" href="regresionlineal.php">Regresion lineal</a>
+                                        <a class="nav-link" href="modelo_islm.php">Modelo IS-LM</a>
+                                        <a class="nav-link" href="balanzap.php">Balanza de pagos</a>
+                                        <a class="nav-link" href="pos_producion.php">Posibilidades de produccion</a>
+                                        <a class="nav-link" href="pun_saturacion.php">Punto de saturacion</a>
+                                        <a class="nav-link" href="punt_equilibrio.php">Punto de equilibrio</a>
+                                        <a class="nav-link" href="">Cálculo de matrices</a>
                                     </nav>
                                 </div>
                         <!--fin del menu de Economia-->
+
+
                         <div class="sb-sidenav-menu-heading">Extras </div> 
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#formulas" >
+                                <div class="sb-nav-link-icon">
+                                    <i class="far fa-file-alt"></i>
+                                </div>
+                               Formulario 
+                            </a>
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#forgen" >
                                 <div class="sb-nav-link-icon">
                                     <i class="fas fa-square-root-alt"></i>
@@ -192,9 +204,10 @@
                                Integral definida
                             </a>
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#solecua" >
-                                <div class="sb-nav-link-icon">                                                                      <img src="../iconos/fx.png" width="20px" height="20px">
+                                <div class="sb-nav-link-icon">   
+                                    <img src="../iconos/fx.png" width="20px" height="20px">
                                 </div>
-                               Solucionador de ecuciones
+                               Despejador de ecuaciones
                             </a>
 
                 	</div>
@@ -209,6 +222,23 @@
     		</nav>
     	</div><!--fin del menu lateral-->
         <!--modal economia-->
+
+          <div id="formulas" class="modal fade" style="z-index: 1400;">
+            <div class="modal-dialog modal-lg" role="dialog" >
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div style="background: #1B396A; color: #fff; height: 60px;padding-left: 40px;">
+                        <p><h3 class="modal-title col-11 text-center">Formulario de ciencias economico administrativas</h3></p>
+                </div>
+              <div class="modal-body">
+                <embed src="../anexos/archivetempFormulario.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="490px" />
+              </div>      
+            </div>
+          </div>
+        </div>
+
+
+
         <div id="forgen" class="modal fade" style="z-index: 1400;">
             <div class="modal-dialog modal-lg" role="dialog" >
             <!-- Modal content-->
@@ -272,7 +302,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div style="background: #1B396A; color: #fff; height: 65px;padding-left: 40px;">
-                        <p><h3 class="modal-title col-11 text-center">Integrales definidas</h3></p>
+                        <p><h3 class="modal-title col-11 text-center">Solucionador de ecuaciones</h3></p>
                 </div>
               <div class="modal-body">
                     <iframe src="formulas/sol.html" width="100%" height="450px" frameborder="0"></iframe>
