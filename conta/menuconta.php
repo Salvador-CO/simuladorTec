@@ -165,10 +165,14 @@
                             </a>
                                 <div class="collapse" id="economia" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="../economia/operaciones.php">Operaciones</a>
-                                        <a class="nav-link" href="../economia/graficos.php">Graficas</a>
-                                        <a class="nav-link" href="../economia/demproductos.php">Demanda de un producto</a>
-                                        <a class="nav-link" href="../economia/calmatrices.php">Cálculo de matrices</a>
+                                        <a class="nav-link" href="../economia/espacioredaccion.php">Area de uso general</a>
+                                        <a class="nav-link" href="../economia/regresionlineal.php">Regresion lineal</a>
+                                        <a class="nav-link" href="../economia/modelo_islm.php">Modelo IS-LM</a>
+                                        <a class="nav-link" href="../economia/balanzap.php">Balanza de pagos</a>
+                                        <a class="nav-link" href="../economia/pos_producion.php">Posibilidades de produccion</a>
+                                        <a class="nav-link" href="../economia/pun_saturacion.php">Punto de saturacion</a>
+                                        <a class="nav-link" href="../economia/punt_equilibrio.php">Punto de equilibrio</a>
+                                        <a class="nav-link" href="../economia/">Cálculo de matrices</a>
                                     </nav>
                                 </div>
                         <!--fin del menu de Economia-->

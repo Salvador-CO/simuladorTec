@@ -11,9 +11,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 		<style type="text/css">
 			.contenedor{
-				margin-left: 2%;
-				margin-right: 2%;
-				border: 1px solid;
+				margin-left: 3%;
+				margin-right: 3%;
+				
 			}
 		</style>
 	</head>
@@ -29,7 +29,8 @@
 		</div>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
 		<div class="contenedor">
-			<iframe width="100%" height="550PX" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21107&authkey=%21AFxNB1-9sLhZdgU&em=2&AllowTyping=True&ActiveCell='Punto%20de%20equilibrio'!C3&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>		
+		
+			<iframe width="100%" height="550px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21117&authkey=%21ADxsfczpW3QRIww&em=2&AllowTyping=True&ActiveCell='punto_equilibrio'!E4&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 		</div>
 		<br><br>
 

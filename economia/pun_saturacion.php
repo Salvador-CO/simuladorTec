@@ -10,7 +10,7 @@
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <title>Regresión lineal</title>
+        <title>Punto de saturacion</title>
         <style type="text/css">
         .contenido{
             margin-left: 3%;
@@ -18,15 +18,15 @@
             text-align: center;
             align-items: center;
             align-content: center;
-            border-bottom: 50px;
+
         }
     </style>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <?php require "menueconomia.php" ?>
                 <!--Titulo-->
                 <div class="container-fluid">
-                <center><h1 class="mt-4">Regresión lineal <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
+                <center><h1 class="mt-4">Punto de saturacion<button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item active"><b>Instrucciones:</b></li>
                 </ol>
@@ -46,10 +46,11 @@
             </div>
         </div>
     </div>
-        <div class="contenido">
-         <iframe width="100%" height="550px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21118&authkey=%21AKEvPD5vbJDB-eo&em=2&AllowTyping=True&ActiveCell='Regresion_lineal'!B5&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
-     </div>
-        <br>
+    <div class="contenido">
+        <iframe width="100%" height="550px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21116&authkey=%21AEvj9vZQvnRXt5I&em=2&AllowTyping=True&ActiveCell='punto_de_saturacion'!B6&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+	</div>	
+    <br>
+
  	<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="../js/scripts.js"></script>
