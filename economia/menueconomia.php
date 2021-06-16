@@ -10,7 +10,7 @@
     $escuela =$_SESSION['escuela'];
     $telefono =$_SESSION['telefono'];
 ?>
-
+ 
     <body class="sb-nav-fixed">
     <!--Menu superiro-->
      <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -172,7 +172,7 @@
                                         <a class="nav-link" href="pos_producion.php">Posibilidades de produccion</a>
                                         <a class="nav-link" href="pun_saturacion.php">Punto de saturacion</a>
                                         <a class="nav-link" href="punt_equilibrio.php">Punto de equilibrio</a>
-                                        <a class="nav-link" href="">Cálculo de matrices</a>
+                                        <a class="nav-link" href="Cobbdouglas.php">Cobb Douglas</a>
                                     </nav>
                                 </div>
                         <!--fin del menu de Economia-->

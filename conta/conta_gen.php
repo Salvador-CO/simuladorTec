@@ -10,6 +10,87 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <title>Contabilidad</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        <style type="text/css">     
+            .parents{ width: 100%; height: auto; margin: auto;
+                display: flex;  justify-content: space-around;
+                flex-wrap: wrap; transition: all 0.2 linear;
+                margin: 0; padding:0; box-sizing: border-box;
+                align-items: center;
+                align-content: center;
+            }
+            .child{
+                border-radius: 8px;
+                align-items: center;
+                align-content: center;
+                height: 120px;
+                background: #6c757d;
+                box-shadow: 0 0 20px #bac3c3;
+                flex:1 1 250px;
+                /*      top right bottom left  */
+                margin: 10px 10px 25px 10px;
+                
+            }
+            
+            
+            @media (max-width: 800px){
+                .grand_parent{height:auto; }
+            }
+
+            .titu{
+                padding: 4% 0;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 3%;
+                height: 60;
+                min-height: 58px;
+                max-height: 65px;
+                color: #fff;
+             
+
+            }
+            .footer{
+                padding: 5% 0;
+                border-radius: 0px 0px 8px 8px;
+                background: #17202A;
+                bottom: 0;
+                width: 100%;
+                min-height: 58px;
+                max-height: 55px;
+                color: white;
+                font-size: 100%;
+                text-align: center;
+              
+            }
+
+           .footer a {
+              outline: none;
+              text-decoration: none;
+              padding: 2px 1px 0;
+            }
+
+            .footer a:link {
+              color: #fff;
+            }
+
+            .footer a:visited {
+              color: #fff;
+            }
+
+            .footer a:focus {
+              background: #000;
+            }
+
+            .footer a:hover {
+               border-bottom: double; border-color: white;
+            }
+
+           .footer  a:active {
+              background: #000;
+              color: #000;
+            }
+
+        </style>
 	</head>
 
 	<?php require "menuconta.php" ?>
@@ -17,7 +98,7 @@
 		<div class="container-fluid">
 	    	<center><h1 class="mt-4">Área de Contabilidad</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active">     </li>
+	        <li class="breadcrumb-item active">  </li>
 		</ol>
 		 <font size="2"><p style="text-align: justify;"><b> Competencias: </b> Identifica y comprende los elementos del costo utilizados por las empresas de transformación. Resuelve casos prácticos de los diferentes sistemas de costos productivos. Examina, analiza y formula estados financieros básicos empleados en las entidades económicas. Conoce e interpreta la razonabilidad y métodos de análisis de los estados financieros generados por las entidades económicas. Emplea las técnicas y el proceso de dirección para conducir al capital humano al logro de los objetivos. </p></font>
          
@@ -38,192 +119,126 @@
             </div>
             <script src="css/main.js"></script>
         <!-- Modal -->
-		<div class="row justify-content-center">
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-book"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Libro diario</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A">
-                        <a class="small text-white stretched-link" href="libro_diario.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-					</div>
-				</div>
-			</div>
+        </div>
+        <div class="grand_parent">
+            <div class="parents">
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-book"style="color:#FFFFFF; width:20; height:20;" ></i>  
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Libro Diario</font>
+                    </div>
+                    <div class="footer">
+                        <a href="libro_diario.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    </div>
+                </div>
+
+                <div class="child">
+                    <div class="titu">
                         <i class="far fa-credit-card"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Tarjeta de almacén</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Tarjetas de almacén</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A"">
-                        <a class="small text-white stretched-link" href="tarjeta.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="tarjeta.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-clipboard"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Libro mayor</font>
+
+                <div class="child">
+                    <div class="titu">
+                       <i class="fas fa-clipboard"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Libro mayor</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A"">
-                        <a class="small text-white stretched-link" href="libro_mayor.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-					</div>
-				</div>
-			</div>
-
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-balance-scale-right"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Balanza de comprobación</font>
+                    <div class="footer">
+                        <a href="libro_mayor.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A"">
-                        <a class="small text-white stretched-link" href="balanza_comprobacion.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-    				</div>
-				</div>
-			</div>
+                </div>
 
-            
-	    </div>
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-balance-scale-right"style="color:#FFFFFF; width:20; height:20;" ></i>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Balanza de Comprobación</font>
+                    </div>
+                    <div class="footer">
+                        <a href="balanza_comprobacion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    </div>
+                </div>
 
-        <div class="segundo">
-                <div class="row justify-content-center">
-
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
+                <div class="child">
+                    <div class="titu">
                         <i class="fas fa-file-invoice"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="3">Estado de resultados</font><br><hr style="border: none;">
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Estado de resultados</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A"">
-                        <a class="small text-white stretched-link" href="estado_resultados.php">Ver panel de opciones</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="estado_resultados.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-             </div>
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
+                <div class="child">
+                    <div class="titu">
                         <i class="fas fa-calculator"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Estado de situación financiera</font><br><hr style="border: none;">
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Estado de Situación Financiera</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A">
-                        <a class="small text-white stretched-link" href="balance_general.php">Ver panel de opciones</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="balance_general.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-file-invoice-dollar"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Estado de flujos de efectivo</font>
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-file-invoice-dollar"style="color:#FFFFFF; width:20; height:20;" ></i>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Estado de Flujos de Efectivo</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A"">
-                        <a class="small text-white stretched-link" href="flujo_efectivo.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a href="flujo_efectivo.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
+
+                <div class="child">
+                    <div class="titu">
                         <i class="fas fa-file-contract"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Estado de variaciones en el capital contable</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Estado de Variaciones en el Capital Contable</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A"">
-                        <a class="small text-white stretched-link" href="variacion_capcontable.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="variacion_capcontable.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
-        
-		</div>
-    </div>
 
-    <div class="segundo">
-        <div class="row justify-content-center">
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body" align="center">
+                <div class="child">
+                    <div class="titu">
                         <i class="fas fa-money-check-alt"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Estado de costos de producción y venta</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Estado de Costos de Producción y Ventas</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A">
-                        <a class="small text-white stretched-link" href="costos_prodvent.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="costos_prodvent.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body" align="center">
-                        <i class="fas fa-file-signature"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Análisis Financiero</font> <br><hr style="border: none;">
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-file-signature"style="color:#FFFFFF; width:20; height:20;" ></i>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Analisis Financiero</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A">
-                        <a class="small text-white stretched-link" href="analisis_financiero.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="analisis_financiero.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-xl-4 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body" align="center">
+                
+                <div class="child">
+                    <div class="titu">
                         <i class="fas fa-file-alt"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Técnicas de evaluación de proyectos</font> 
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Técnicas de evaluación de proyectos</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background: #17202A">
-                        <a class="small text-white stretched-link" href="tecnicas_proyectos.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="tecnicas_proyectos.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
     <br>
-
-
 
 	<!---->
 	   	</main>
+        
 		</div>
 		</div>
  		<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>

@@ -173,7 +173,7 @@
                                         <a class="nav-link" href="../economia/pos_producion.php">Posibilidades de produccion</a>
                                         <a class="nav-link" href="../economia/pun_saturacion.php">Punto de saturacion</a>
                                         <a class="nav-link" href="../economia/punt_equilibrio.php">Punto de equilibrio</a>
-                                        <a class="nav-link" href="../economia/">Cálculo de matrices</a>
+                                        <a class="nav-link" href="../economia/Cobbdouglas.php">Cobb Douglas</a>
                                     </nav>
                                 </div>
                         <!--fin del menu de Economia-->

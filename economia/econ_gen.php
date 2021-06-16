@@ -135,10 +135,10 @@
                 <div class="card bg-secondary text-white mb-4">
                     <div class="card-body">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">-------</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Cobb Douglas</font>
                     </div>
                     <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="#">Ver panel</a>
+                        <a class="small text-white stretched-link" href="Cobbdouglas.php">Ver panel</a>
                         <div class="small text-white">
                             <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
                         </div>

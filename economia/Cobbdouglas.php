@@ -7,40 +7,27 @@
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <title>Modelo IS - LM</title>
-        <style type="text/css">
-        	.conten{
-        		margin-right: 3%;
-        		margin-left: 3%;
-        		
-        	}
-
-        </style>
+        <title>Balanza de pgos</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 	</head>
 
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Modelo IS - LM</h1></center>
+	    	<center><h1 class="mt-4">Sitema Contable ITT2</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active"> </li>
+	        <li class="breadcrumb-item active">Pagina Principal</li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
+			<h1>EJEMPLO</h1>
 		</div>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
+		   	<h1>EJEMPLO</h1>
 
-	
-
-		<div class="conten" align="center">
-			<iframe width="65%" height="600px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21132&authkey=%21AK5s3Z04raTlo7o&em=2&AllowTyping=True&ActiveCell='Datos-Calculos'!A4&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
-		</div>
-		<!---->
+	<!---->
 	   	</main>
 		</div>
 		</div>
-
-		
  		<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="../js/scripts.js"></script>
