@@ -9,6 +9,86 @@
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <title>Economía</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        <style type="text/css">     
+            .parents{ width: 100%; height: auto; margin: auto;
+                display: flex;  justify-content: space-around;
+                flex-wrap: wrap; transition: all 0.2 linear;
+                margin: 0; padding:0; box-sizing: border-box;
+                align-items: center;
+                align-content: center;
+            }
+            .child{
+                border-radius: 8px;
+                align-items: center;
+                align-content: center;
+                height: 120px;
+                background: #6c757d;
+                box-shadow: 0 0 20px #bac3c3;
+                flex:1 1 250px;
+                /*      top right bottom left  */
+                margin: 10px 10px 25px 10px;
+                
+            }
+            
+            
+            @media (max-width: 800px){
+                .grand_parent{height:auto; }
+            }
+
+            .titu{
+                padding: 4% 0;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 3%;
+                height: 60;
+                min-height: 58px;
+                max-height: 65px;
+                color: #fff;
+             
+
+            }
+            .footer{
+                padding: 5% 0;
+                border-radius: 0px 0px 8px 8px;
+                background: #17202A;
+                bottom: 0;
+                width: 100%;
+                min-height: 58px;
+                max-height: 55px;
+                color: white;
+                font-size: 100%;
+                text-align: center;
+              
+            }
+
+           .footer a {
+              outline: none;
+              text-decoration: none;
+              padding: 2px 1px 0;
+            }
+
+            .footer a:link {
+              color: #fff;
+            }
+
+            .footer a:visited {
+              color: #fff;
+            }
+
+            .footer a:focus {
+              background: #000;
+            }
+
+            .footer a:hover {
+               border-bottom: double; border-color: white;
+            }
+
+           .footer  a:active {
+              background: #000;
+              color: #000;
+            }
+        </style>
 	</head>
 
 	<?php require "menueconomia.php" ?>
@@ -22,132 +102,93 @@
 		<font size="2"><p style="text-align: justify;"><b> Competencias: </b> Determinar y aplicar la oferta y la demanda y su elasticidad a través de las diferentes funciones matemáticas. Aplica el modelo de oferta y demanda agregada para determinar los efectos de la política económica en el equilibrio macroeconómico. Comprende, analiza, y calcula los componentes básicos de las Cuentas Nacionales.  </p></font>
         
 		<!--Contenido dentro del div con margen-->
-		 
-         <div class="row">
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-calculator"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Área de uso general (Word)</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="espacioredaccion.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-					</div>
-				</div>
-			</div>
-            
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fa fa-building"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Regresión lineal</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="regresionlineal.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-					</div>
-				</div>
-			</div>
+       </div>
+    <div class="grand_parent">
+            <div class="parents">
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-landmark"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Modelo IS - LM</font>
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-book"style="color:#FFFFFF; width:20; height:20;" ></i>  
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Área de uso general (Word)</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="modelo_islm.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-    				</div>
-				</div>
-			</div>
+                    <div class="footer">
+                        <a href="espacioredaccion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    </div>
+                </div>
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
+                <div class="child">
+                    <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Balanza de pagos</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Regresión lineal</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="balanzap.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-					</div>
-				</div>
-			 </div>
-	    </div>
-        <div class="segundo">
-                <div class="row">
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-calculator"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Posibilidades de producción</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="pos_producion.php">Ver panel</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a  href="regresionlineal.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fa fa-building"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Punto de saturación</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="pun_saturacion.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
-                        <i class="fas fa-landmark"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Punto de equilibrio</font>
+                <div class="child">
+                    <div class="titu">
+                       <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Modelo IS - LM</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="punt_equilibrio.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a href="modelo_islm.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-secondary text-white mb-4">
-                    <div class="card-body">
+                <div class="child">
+                    <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Cobb Douglas</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Balanza de pagos</font>
                     </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between" style="background:#17202A">
-                        <a class="small text-white stretched-link" href="Cobbdouglas.php">Ver panel</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
+                    <div class="footer">
+                        <a href="balanzap.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
-             </div>
+
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Posibilidades de producción</font>
+                    </div>
+                    <div class="footer">
+                        <a  href="pos_producion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    </div>
+                </div>
+
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Punto de saturación</font>
+                    </div>
+                    <div class="footer">
+                        <a  href="pun_saturacion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    </div>
+                </div>
+
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Punto de equilibrio</font>
+                    </div>
+                    <div class="footer">
+                        <a href="punt_equilibrio.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    </div>
+                </div>
+
+                <div class="child">
+                    <div class="titu">
+                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Cobb Douglas</font>
+                    </div>
+                    <div class="footer">
+                        <a  href="Cobbdouglas.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-		</div>
+    </div>
+    <br>
+
 	
 
 	<!---->
