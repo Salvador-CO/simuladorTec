@@ -244,7 +244,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
-                        <p><h3 class="modal-title col-11 text-center">Calculadora de soluciones de ecuaciones cuadráticas</h3></p>
+                        <p><h3 class="modal-title col-11 text-center">Calculadora de ecuaciones cuadráticas</h3></p>
                 </div>
               <div class="modal-body">
                 <iframe src="formulas/formulagen.php" width="100%" height="450px" style="border:0px"></iframe>
