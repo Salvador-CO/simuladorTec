@@ -35,9 +35,12 @@
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active"> </li>
 		</ol>
+
+    
 		<!--Contenido dentro del div con margen-->
 		</div>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
+
         <!-- modal de instruccines -->
         <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
             <div class="modal-dialog modal-lg" role="dialog" >
@@ -58,6 +61,7 @@
 		<div class="conten" align="center">
 			<iframe width="65%" height="600px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21132&authkey=%21AK5s3Z04raTlo7o&em=2&AllowTyping=True&ActiveCell='Datos-Calculos'!A4&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 		</div>
+    <br>
 		<!---->
 	   	</main>
 		</div>

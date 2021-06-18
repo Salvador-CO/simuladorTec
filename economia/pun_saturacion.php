@@ -53,6 +53,14 @@
                 </div>
             </div>
         </div>
+        <div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+            <ul class="list-unstyled" style="margin-bottom: 0;">
+              <li><strong>Nota:</strong> En la parte inferior derecha podras descargar el archivo <i class="fas fa-file-download"></i> 
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+    </div>
     </div>
     <div class="contenido">
         <iframe width="100%" height="550px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21116&authkey=%21AEvj9vZQvnRXt5I&em=2&AllowTyping=True&ActiveCell='punto_de_saturacion'!B6&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
