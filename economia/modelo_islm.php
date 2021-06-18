@@ -35,7 +35,14 @@
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active"> </li>
 		</ol>
-
+    <div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+            <ul class="list-unstyled" style="margin-bottom: 0;">
+              <li><strong>Nota:</strong> En la parte inferior derecha podras descargar el archivo <i class="fas fa-file-download"></i> 
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+    </div>
     
 		<!--Contenido dentro del div con margen-->
 		</div>
