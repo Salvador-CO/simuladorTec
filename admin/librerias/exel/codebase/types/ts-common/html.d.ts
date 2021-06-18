@@ -54,9 +54,12 @@ export declare function fitPosition(node: HTMLElement, config: IFitPositionConfi
     minWidth: string;
     position: string;
 };
-export declare function getStrSize(str: string, textStyle?: any): {
-    width: number;
-    height: number;
-};
 export declare function getPageCss(): string;
+export declare function getLabelStyle(config: any): false | {
+    style: {
+        width: any;
+        "max-width": string;
+    };
+    label: any;
+};
 export {};

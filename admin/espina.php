@@ -50,9 +50,7 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
                         <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
                 </div>
               <div class="modal-body">
-                
-
-                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+                <embed src="../manual/Espina.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
               </div>      
             </div>
           </div>

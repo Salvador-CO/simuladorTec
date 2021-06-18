@@ -16,7 +16,7 @@ export declare class Layout extends Cell implements ILayout {
     getId(index: number): string;
     getRefs(name: string): any;
     getCell(id: string): any;
-    forEach(cb: LayoutCallback, parent?: Id, level?: number): void;
+    forEach(callback: LayoutCallback, parent?: Id, level?: number): void;
     /** @deprecated See a documentation: https://docs.dhtmlx.com/ */
     cell(id: string): any;
     protected _getCss(content?: boolean): string;

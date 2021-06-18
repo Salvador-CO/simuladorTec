@@ -83,7 +83,7 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
               <div class="modal-body">
                 
 
-                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+                <embed src="../manual/Gantt.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
               </div>      
             </div>
           </div>
@@ -643,7 +643,7 @@ function showBaselineInfo (event,element){
  <!-- <table class="gdfTable" cellspacing="0" cellpadding="0">
     <thead>
     <tr style="height:40px">
-      <th class="gdfColHeader" style="width:35px; border-right: none"></th>
+      <th class="gdfColHeader" style=" border-right: none"></th>
       <th class="gdfColHeader" style="width:25px;"></th>
       <th class="gdfColHeader gdfResizable" style="width:20px;">Codigo</th>
       <th class="gdfColHeader gdfResizable" style="width:50px;">Nombre</th>

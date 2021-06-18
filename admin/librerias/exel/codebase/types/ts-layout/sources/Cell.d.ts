@@ -1,7 +1,6 @@
 import { IViewLike, View } from "../../ts-common/view";
 import { ICell, ICellConfig, ILayout, LayoutEvents, ILayoutEventHandlersMap } from "./types";
 import { IEventSystem } from "../../ts-common/events";
-import { CssManager } from "../../ts-common/CssManager";
 export declare class Cell extends View implements ICell {
     id: string;
     config: ICellConfig;
@@ -13,7 +12,6 @@ export declare class Cell extends View implements ICell {
     private _parent;
     private _ui;
     private _resizerHandlers;
-    protected _cssManager: CssManager;
     constructor(parent: string | HTMLElement | ILayout, config: ICellConfig);
     paint(): void;
     isVisible(): boolean;

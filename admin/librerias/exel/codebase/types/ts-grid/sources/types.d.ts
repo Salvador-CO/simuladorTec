@@ -3,7 +3,7 @@ import { IKeyManager } from "../../ts-common/KeyManager";
 import { IAlign } from "../../ts-common/html";
 import { IDataCollection, IDragConfig, ICsvDriverConfig, IDataItem, IDragInfo } from "../../ts-data";
 import { Exporter } from "./Exporter";
-import { IComboFilterConfig } from "../../ts-combobox";
+import { IComboFilterConfig, Combobox } from "../../ts-combobox";
 import { IHandlers } from "../../ts-common/types";
 export interface IGridConfig extends IDragConfig {
     columns?: ICol[];
@@ -101,7 +101,7 @@ export interface IGrid {
     setColumns(col: ICol[]): void;
     addRowCss(id: any, css: string): void;
     removeRowCss(id: any, css: string): void;
-    addCellCss(row: string, col: string, css: string): void;
+    addCellCss(row: string, col: string | number, css: string): void;
     removeCellCss(row: string, col: string, css: string): void;
     getRootView(): any;
     showColumn(colId: string | number): void;
@@ -122,7 +122,7 @@ export interface IGrid {
     editCell(rowId: string | number, colId: string | number, editorType?: EditorType): void;
     editEnd(withoutSave?: boolean): void;
     getSortingState(): any;
-    getHeaderFilter(colId: string | number): any;
+    getHeaderFilter(colId: string | number): HTMLElement | Combobox;
     /** @deprecated See a documentation: https://docs.dhtmlx.com/ */
     edit(rowId: string | number, colId: string | number, editorType?: EditorType): void;
 }
@@ -315,7 +315,7 @@ export interface IEventHandlersMap {
     [GridEvents.footerCellRightClick]: (col: ICol, e: MouseEvent) => void;
     [GridEvents.beforeEditStart]: (row: IRow, col: ICol, editorType: EditorType) => boolean | void;
     [GridEvents.afterEditStart]: (row: IRow, col: ICol, editorType: EditorType) => void;
-    [GridEvents.beforeEditEnd]: (value: any, row: IRow, col: ICol) => boolean | void;
+    [GridEvents.beforeEditEnd]: (value: string | number, row: IRow, col: ICol) => boolean | void;
     [GridEvents.afterEditEnd]: (value: any, row: IRow, col: ICol) => void;
     [GridEvents.beforeKeyDown]: (e: Event) => boolean | void;
     [GridEvents.afterKeyDown]: (e: Event) => void;
@@ -328,23 +328,23 @@ export interface IEventHandlersMap {
     [GridEvents.beforeRowShow]: (row: IRow) => boolean | void;
     [GridEvents.afterRowShow]: (row: IRow) => void;
     [GridEvents.beforeRowDrag]: (data: IDragInfo, events: MouseEvent) => void | boolean;
-    [GridEvents.dragRowStart]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.dragRowOut]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.dragRowIn]: (data: IDragInfo, events: MouseEvent) => void | boolean;
-    [GridEvents.canRowDrop]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.cancelRowDrop]: (data: IDragInfo, events: MouseEvent) => any;
+    [GridEvents.dragRowStart]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.dragRowOut]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.dragRowIn]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.canRowDrop]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.cancelRowDrop]: (data: IDragInfo, events: MouseEvent) => void;
     [GridEvents.beforeRowDrop]: (data: IDragInfo, events: MouseEvent) => void | boolean;
-    [GridEvents.afterRowDrop]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.afterRowDrag]: (data: IDragInfo, events: MouseEvent) => any;
+    [GridEvents.afterRowDrop]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.afterRowDrag]: (data: IDragInfo, events: MouseEvent) => void;
     [GridEvents.beforeColumnDrag]: (data: IDragInfo, events: MouseEvent) => void | boolean;
-    [GridEvents.dragColumnStart]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.dragColumnOut]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.dragColumnIn]: (data: IDragInfo, events: MouseEvent) => void | boolean;
-    [GridEvents.canColumnDrop]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.cancelColumnDrop]: (data: IDragInfo, events: MouseEvent) => any;
+    [GridEvents.dragColumnStart]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.dragColumnOut]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.dragColumnIn]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.canColumnDrop]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.cancelColumnDrop]: (data: IDragInfo, events: MouseEvent) => void;
     [GridEvents.beforeColumnDrop]: (data: IDragInfo, events: MouseEvent) => void | boolean;
-    [GridEvents.afterColumnDrop]: (data: IDragInfo, events: MouseEvent) => any;
-    [GridEvents.afterColumnDrag]: (data: IDragInfo, events: MouseEvent) => any;
+    [GridEvents.afterColumnDrop]: (data: IDragInfo, events: MouseEvent) => void;
+    [GridEvents.afterColumnDrag]: (data: IDragInfo, events: MouseEvent) => void;
     [GridEvents.beforeRowResize]: (row: IRow, events: Event, currentHeight: number) => boolean;
     [GridEvents.afterRowResize]: (row: IRow, events: Event, currentHeight: number) => void;
     [GridEvents.headerInput]: (value: string, colId: string, filterId: fixedRowContent) => void;

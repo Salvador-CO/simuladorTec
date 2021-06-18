@@ -63,7 +63,7 @@ export interface IDataCollection<T extends IDataItem = IDataItem> {
     loadData: Promise<any>;
     saveData: Promise<any>;
     load(url: IDataProxy | string): Promise<any>;
-    parse(data: T[]): any;
+    parse(data: T[], driver?: DataDriver | IDataDriver): void;
     add(obj: IDataItem, index?: number): Id;
     add(obj: IDataItem[], index?: number): Id[];
     add(obj: IDataItem | IDataItem[], index?: number): Id | Id[];
@@ -79,16 +79,16 @@ export interface IDataCollection<T extends IDataItem = IDataItem> {
     getId(index: number): Id;
     filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;
     find(rule: IFilterMode): T;
-    reduce<A>(cb: ReduceCallBack<T, A>, acc: A): A;
+    reduce<A>(callback: ReduceCallBack<T, A>, acc: A): A;
     findAll(rule: IFilterMode): T[];
-    map(cb: DataCallback<T>): T[];
-    mapRange(from: number, to: number, cb: DataCallback<T>): any[];
+    map(callback: DataCallback<T>): T[];
+    mapRange(from: number, to: number, callback: DataCallback<T>): T[];
     sort(by: ISortMode): void;
     serialize(driver?: DataDriver): T[];
     copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
     move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];
     changeId(id: Id, newId?: Id, silent?: boolean): void;
-    forEach(cb: DataCallback<T>): void;
+    forEach(callback: DataCallback<T>): void;
     save(url: IDataProxy | string): void;
     isSaved(): boolean;
     getRawData(from: number, to: number, order?: T[], mode?: number): T[];
@@ -145,7 +145,7 @@ export interface ITreeCollection<T extends IDataItem = IDataItem> extends IDataC
     getIndex(id: Id): number;
     getItems(id: Id): T[];
     sort(conf?: any): void;
-    map(cb: DataCallback<T>, parent?: Id, direct?: boolean): any;
+    map(callback: DataCallback<T>, parent?: Id, direct?: boolean): any;
     filter(rule?: IFilterMode | IFilterCallback, config?: ITreeFilterConfig): void;
     restoreOrder(): void;
     copy(id: Id, index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id;
@@ -154,13 +154,13 @@ export interface ITreeCollection<T extends IDataItem = IDataItem> extends IDataC
     move(id: Id, index: number, target?: ITreeCollection | IDataCollection, targetId?: Id): Id;
     move(id: Id[], index: number, target?: ITreeCollection | IDataCollection, targetId?: Id): Id[];
     move(id: Id | Id[], index: number, target?: ITreeCollection | IDataCollection, targetId?: Id): Id | Id[];
-    eachChild(id: Id, cb: DataCallback<T>, direct?: boolean, checkItem?: (item: IDataItem) => boolean): void;
-    eachParent(id: Id, cb: DataCallback<T>, self?: boolean): void;
+    eachChild(id: Id, callback: DataCallback<T>, direct?: boolean, checkItem?: (item: IDataItem) => boolean): void;
+    eachParent(id: Id, callback: DataCallback<T>, self?: boolean): void;
     loadItems(id: Id, driver?: any): void;
     refreshItems(id: Id, driver?: any): void;
     haveItems(id: Id): boolean;
     canCopy(id: Id, target: Id): boolean;
-    forEach(cb: DataCallback<T>, parent?: Id, level?: number): void;
+    forEach(callback: DataCallback<T>, parent?: Id, level?: number): void;
 }
 export interface IDataItem {
     id?: string;
@@ -212,7 +212,7 @@ export declare enum DataEvents {
 }
 export interface IDataEventsHandlersMap {
     [key: string]: (...args: any[]) => any;
-    [DataEvents.change]: (id?: string, status?: Statuses, obj?: any) => any;
+    [DataEvents.change]: (id?: string, status?: Statuses, obj?: any) => void;
     [DataEvents.afterAdd]: (obj: any) => void;
     [DataEvents.afterRemove]: (obj: any) => void;
     [DataEvents.beforeAdd]: (obj: any) => boolean | void;
@@ -245,11 +245,11 @@ export declare type DropBehaviour = "child" | "sibling" | "complex";
 export interface IDragEventsHandlersMap {
     [key: string]: (...args: any[]) => any;
     [DragEvents.beforeDrag]: (data: IDragInfo, events: MouseEvent, ghost: HTMLElement) => void | boolean;
-    [DragEvents.dragStart]: (data: IDragInfo, events: MouseEvent) => any;
-    [DragEvents.dragOut]: (data: IDragInfo, events: MouseEvent) => any;
+    [DragEvents.dragStart]: (data: IDragInfo, events: MouseEvent) => void;
+    [DragEvents.dragOut]: (data: IDragInfo, events: MouseEvent) => void;
     [DragEvents.dragIn]: (data: IDragInfo, events: MouseEvent) => void | boolean;
-    [DragEvents.canDrop]: (data: IDragInfo, events: MouseEvent) => any;
-    [DragEvents.cancelDrop]: (data: IDragInfo, events: MouseEvent) => any;
+    [DragEvents.canDrop]: (data: IDragInfo, events: MouseEvent) => void;
+    [DragEvents.cancelDrop]: (data: IDragInfo, events: MouseEvent) => void;
     [DragEvents.beforeDrop]: (data: IDragInfo, events: MouseEvent) => void | boolean;
     [DragEvents.afterDrop]: (data: IDragInfo, events: MouseEvent) => any;
     [DragEvents.afterDrag]: (data: IDragInfo, events: MouseEvent) => any;

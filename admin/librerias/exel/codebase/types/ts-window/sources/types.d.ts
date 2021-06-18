@@ -74,7 +74,7 @@ export interface IWindowEventHandlersMap {
     [key: string]: (...args: any[]) => any;
     [WindowEvents.resize]: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, editettypes: IDirectionConfig) => void;
     [WindowEvents.headerDoubleClick]: (e: Event) => void;
-    [WindowEvents.move]: (position: IPosition, oldPosition: IPosition, editettypes: IDirectionConfig) => void;
+    [WindowEvents.move]: (position: IPosition, oldPosition: IPosition, side: IDirectionConfig) => void;
     [WindowEvents.afterHide]: (position: IPosition, e?: Event) => void;
     [WindowEvents.afterShow]: (position: IPosition) => void;
     [WindowEvents.beforeHide]: (position: IPosition, e?: Event) => boolean | void;

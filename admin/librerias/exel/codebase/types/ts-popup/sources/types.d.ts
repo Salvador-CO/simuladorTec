@@ -33,8 +33,8 @@ export interface IShowConfig {
 export interface IPopupEventHandlersMap {
     [key: string]: (...args: any[]) => any;
     [PopupEvents.click]: (e: Event) => any;
-    [PopupEvents.afterHide]: (e: Event) => any;
-    [PopupEvents.afterShow]: (node: HTMLElement) => any;
+    [PopupEvents.afterHide]: (e: Event) => void;
+    [PopupEvents.afterShow]: (node: HTMLElement) => void;
     [PopupEvents.beforeHide]: (fromOuterClick: boolean, e: Event) => void | boolean;
     [PopupEvents.beforeShow]: (node: HTMLElement) => void | boolean;
 }

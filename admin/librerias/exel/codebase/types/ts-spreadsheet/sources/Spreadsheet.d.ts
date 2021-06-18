@@ -44,7 +44,12 @@ export declare class Spreadsheet extends View implements ISpreadsheet {
     paint(): void;
     load(url: string, type?: FileFormat): Promise<any>;
     parse(data: IDataWithStyles | ICellInfo[], type?: any): void;
-    serialize(): any;
+    serialize(): {
+        sheets: any[];
+        styles: {};
+        columns: {};
+        formats: import("./types").IFormats[];
+    };
     setValue(cell: string, value: any | any[]): void;
     getValue(cell: string): any | any[];
     getCellIndex(cell: string): any;

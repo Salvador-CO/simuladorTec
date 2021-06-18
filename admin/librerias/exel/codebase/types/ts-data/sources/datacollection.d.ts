@@ -1,6 +1,6 @@
 import { IEventSystem } from "../../ts-common/events";
 import { Sort } from "./datacollection/sort";
-import { DataCallback, DataEvents, Id, IDataCollection, IDataItem, IDataProxy, IFilterCallback, IFilterConfig, IFilterMode, ISortMode, ITreeCollection, IUpdateObject, ReduceCallBack, Statuses, IDataEventsHandlersMap, DataDriver, IDataConfig, ISortConfig } from "./types";
+import { DataCallback, DataEvents, Id, IDataCollection, IDataItem, IDataProxy, IFilterCallback, IFilterConfig, IFilterMode, ISortMode, ITreeCollection, IUpdateObject, ReduceCallBack, Statuses, IDataEventsHandlersMap, DataDriver, IDataConfig, ISortConfig, IDataDriver } from "./types";
 import { TreeCollection } from "./treecollection";
 export declare class DataCollection<T extends IDataItem = IDataItem> implements IDataCollection<T> {
     loadData: Promise<any>;
@@ -41,16 +41,16 @@ export declare class DataCollection<T extends IDataItem = IDataItem> implements 
     sort(by?: ISortMode, config?: ISortConfig): void;
     copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
     move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];
-    forEach(cb: DataCallback<T>): void;
+    forEach(callback: DataCallback<T>): void;
     load(url: IDataProxy | string, driver?: any): Promise<any>;
-    parse(data: T[], driver?: any): any;
+    parse(data: T[], driver?: DataDriver | IDataDriver): any;
     $parse(data: any[]): void;
     save(url: IDataProxy | string): void;
     changeId(id: Id, newId?: Id, silent?: boolean): void;
     isSaved(): boolean;
-    map(cb: DataCallback<T>): any[];
-    mapRange(from: number, to: number, cb: DataCallback<T>): any[];
-    reduce<A>(cb: ReduceCallBack<T, A>, acc: A): A;
+    map(callback: DataCallback<T>): any[];
+    mapRange(from: number, to: number, callback: DataCallback<T>): any[];
+    reduce<A>(callback: ReduceCallBack<T, A>, acc: A): A;
     serialize(driver?: DataDriver): any;
     getInitialData(): T[];
     setMeta(obj: T, key: string, value: any): void;

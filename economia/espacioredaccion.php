@@ -43,7 +43,7 @@
                     </div>
                   <div class="modal-body">
                    <!--   contenido -->
-                    <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+                    <embed src="../manual/word.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
                   </div>      
                 </div>
             </div>

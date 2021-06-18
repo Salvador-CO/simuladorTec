@@ -20,6 +20,15 @@
             align-content: center;
             border-bottom: 50px;
         }
+        .btn-circle {
+              width: 30px;
+              height: 30px;
+              padding: 6px 0px;
+              border-radius: 15px;
+              text-align: center;
+              font-size: 12px;
+              line-height: 1.42857;
+            }
     </style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -40,7 +49,7 @@
                     </div>
                   <div class="modal-body">
                    <!--   contenido -->
-                    <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+                    <embed src="../manual/Regresión.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
                   </div>      
                 </div>
             </div>

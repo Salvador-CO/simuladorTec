@@ -38,15 +38,15 @@ export declare enum ListEvents {
 }
 export interface IListEventHandlersMap {
     [key: string]: (...args: any[]) => any;
-    [ListEvents.click]: (id: string, e: Event) => any;
-    [ListEvents.itemMouseOver]: (id: string, e: Event) => any;
-    [ListEvents.doubleClick]: (id: string, e: Event) => any;
-    [ListEvents.itemRightClick]: (id: string, e: MouseEvent) => any;
-    [ListEvents.focusChange]: (focusIndex: number, id: string) => any;
+    [ListEvents.click]: (id: string, e: Event) => void;
+    [ListEvents.itemMouseOver]: (id: string, e: Event) => void;
+    [ListEvents.doubleClick]: (id: string, e: Event) => void;
+    [ListEvents.itemRightClick]: (id: string, e: MouseEvent) => void;
+    [ListEvents.focusChange]: (focusIndex: number, id: string) => void;
     [ListEvents.beforeEditStart]: (id: string) => void | boolean;
     [ListEvents.afterEditStart]: (id: string) => void;
-    [ListEvents.beforeEditEnd]: (value: any, id: string) => void | boolean;
-    [ListEvents.afterEditEnd]: (value: any, id: string) => void;
+    [ListEvents.beforeEditEnd]: (value: string, id: string) => void | boolean;
+    [ListEvents.afterEditEnd]: (value: string, id: string) => void;
     [ListEvents.contextmenu]: (id: string, e: MouseEvent) => any;
 }
 export interface ISelectionConfig {

@@ -65,12 +65,12 @@ export interface ICell extends IView {
 }
 export interface ILayout extends ICell {
     config: ILayoutConfig;
-    removeCell(id: string): any;
+    removeCell(id: string): void;
     addCell(config: ICellConfig, index: number): any;
     getRefs(str: any): any;
     getCell(id: string): ICell;
     getId(index: number): string;
-    forEach(cb: LayoutCallback): void;
+    forEach(callback: LayoutCallback): void;
     destructor(): void;
     /** @deprecated See a documentation: https://docs.dhtmlx.com/ */
     cell(id: string): ICell;
@@ -95,7 +95,7 @@ export declare enum LayoutEvents {
 export interface ILayoutEventHandlersMap {
     [key: string]: (...args: any[]) => any;
     [LayoutEvents.beforeShow]: (id: string) => boolean | void;
-    [LayoutEvents.afterShow]: (id: string) => any;
+    [LayoutEvents.afterShow]: (id: string) => void;
     [LayoutEvents.beforeHide]: (id: string) => boolean | void;
     [LayoutEvents.afterHide]: (id: string) => any;
     [LayoutEvents.beforeResizeStart]: (id: string) => boolean | void;

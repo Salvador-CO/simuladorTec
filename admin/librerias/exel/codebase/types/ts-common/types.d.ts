@@ -28,8 +28,8 @@ export declare enum SelectionEvents {
 }
 export interface ISelectionEventsHandlersMap {
     [key: string]: (...args: any[]) => any;
-    [SelectionEvents.afterSelect]: (id: string) => any;
-    [SelectionEvents.afterUnSelect]: (id: string) => any;
+    [SelectionEvents.afterSelect]: (id: string) => void;
+    [SelectionEvents.afterUnSelect]: (id: string) => void;
     [SelectionEvents.beforeSelect]: (id: string) => void | boolean;
     [SelectionEvents.beforeUnSelect]: (id: string) => void | boolean;
 }

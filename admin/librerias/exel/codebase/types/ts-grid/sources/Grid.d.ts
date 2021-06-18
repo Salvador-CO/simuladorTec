@@ -5,6 +5,7 @@ import { View } from "../../ts-common/view";
 import { DataEvents, DragEvents, IDataCollection, IDataEventsHandlersMap, IDataItem, IDragEventsHandlersMap } from "../../ts-data";
 import { Exporter } from "./Exporter";
 import { Dirs, EditorType, GridEvents, IAdjustBy, ICellRect, ICol, IContentList, ICoords, IEventHandlersMap, IGrid, IGridConfig, IRow, IScrollState, ISelection, ISpan, GridSystemEvents, ISystemEventHandlersMap, IColumnsWidth } from "./types";
+import { Combobox } from "../../ts-combobox";
 export declare class Grid extends View implements IGrid {
     data: IDataCollection;
     config: IGridConfig;
@@ -49,7 +50,7 @@ export declare class Grid extends View implements IGrid {
         dir: import("../../ts-grid").Dirs;
         by: string;
     };
-    getHeaderFilter(colId: string | number): any;
+    getHeaderFilter(colId: string | number): HTMLElement | Combobox;
     /** @deprecated See a documentation: https://docs.dhtmlx.com/ */
     edit(rowId: string | number, colId: string | number, editorType?: EditorType): void;
     protected _parseColumns(): void;

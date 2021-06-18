@@ -18,15 +18,23 @@
             text-align: center;
             align-items: center;
             align-content: center;
-
         }
+        .btn-circle {
+              width: 30px;
+              height: 30px;
+              padding: 6px 0px;
+              border-radius: 15px;
+              text-align: center;
+              font-size: 12px;
+              line-height: 1.42857;
+            }
     </style>
     </head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <?php require "menueconomia.php" ?>
                 <!--Titulo-->
                 <div class="container-fluid">
-                <center><h1 class="mt-4">Punto de saturacion<button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
+                <center><h1 class="mt-4">Punto de saturación <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item active"><b>Instrucciones:</b></li>
                 </ol>
@@ -40,7 +48,7 @@
                     </div>
                   <div class="modal-body">
                    <!--   contenido -->
-                    <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+                  <embed src="../manual/Punto.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
                   </div>      
                 </div>
             </div>

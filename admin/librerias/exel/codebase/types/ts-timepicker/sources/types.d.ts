@@ -39,12 +39,12 @@ export declare enum TimepickerEvents {
 }
 export interface ITimepickerHandlersMap {
     [key: string]: (...args: any[]) => any;
-    [TimepickerEvents.change]: (time: string | ITimeObject) => void;
-    [TimepickerEvents.beforeApply]: (time: string | ITimeObject) => void;
-    [TimepickerEvents.afterApply]: (time: string | ITimeObject) => boolean | void;
-    [TimepickerEvents.beforeClose]: (time: string | ITimeObject) => boolean | void;
-    [TimepickerEvents.afterClose]: (time: string | ITimeObject) => void;
-    [TimepickerEvents.apply]: (time: string) => void;
+    [TimepickerEvents.change]: (value: string | ITimeObject) => void;
+    [TimepickerEvents.beforeApply]: (value: string | ITimeObject) => boolean | void;
+    [TimepickerEvents.afterApply]: (value: string | ITimeObject) => void;
+    [TimepickerEvents.beforeClose]: (value: string | ITimeObject) => boolean | void;
+    [TimepickerEvents.afterClose]: (value: string | ITimeObject) => void;
+    [TimepickerEvents.apply]: (value: string) => void;
     [TimepickerEvents.close]: () => any;
-    [TimepickerEvents.save]: (time?: ITimeObject) => any;
+    [TimepickerEvents.save]: (value?: ITimeObject) => any;
 }

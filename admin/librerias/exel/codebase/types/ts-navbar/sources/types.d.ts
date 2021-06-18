@@ -164,11 +164,11 @@ export declare enum NavigationBarEvents {
 }
 export interface INavbarEventHandlersMap {
     [key: string]: (...args: any[]) => any;
-    [NavigationBarEvents.inputCreated]: (id: string, input: HTMLInputElement) => any;
-    [NavigationBarEvents.openMenu]: (id: string) => any;
-    [NavigationBarEvents.click]: (id: string, e: Event) => any;
-    [NavigationBarEvents.beforeHide]: (id: string, e: Event) => void | boolean;
-    [NavigationBarEvents.afterHide]: (e: Event) => any;
-    [NavigationBarEvents.inputBlur]: (id: string) => any;
-    [NavigationBarEvents.inputFocus]: (id: string) => any;
+    [NavigationBarEvents.inputCreated]: (id: string, input: HTMLInputElement) => void;
+    [NavigationBarEvents.openMenu]: (id: string) => void;
+    [NavigationBarEvents.click]: (id: string, events: Event) => void;
+    [NavigationBarEvents.beforeHide]: (id: string, events: Event) => void | boolean;
+    [NavigationBarEvents.afterHide]: (events: Event) => void;
+    [NavigationBarEvents.inputBlur]: (id: string) => void;
+    [NavigationBarEvents.inputFocus]: (id: string) => void;
 }

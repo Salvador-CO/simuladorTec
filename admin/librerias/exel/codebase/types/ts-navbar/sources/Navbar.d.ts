@@ -15,6 +15,7 @@ export declare abstract class Navbar<T extends IItem = IItem> extends View {
         right: number;
         top: number;
         bottom: number;
+        zIndex?: number;
     };
     protected _isContextMenu: boolean;
     protected _handlers: IHandlers;

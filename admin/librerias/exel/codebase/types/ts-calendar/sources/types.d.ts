@@ -53,12 +53,12 @@ export declare enum CalendarEvents {
 }
 export interface ICalendarHandlersMap {
     [key: string]: (...args: any[]) => any;
-    [CalendarEvents.change]: (date: Date, oldDate: Date, byClick: boolean) => any;
+    [CalendarEvents.change]: (date: Date, oldDate: Date, byClick: boolean) => void;
     [CalendarEvents.beforeChange]: (date: Date, oldDate: Date, byClick: boolean) => boolean | void;
-    [CalendarEvents.dateMouseOver]: (date: Date, e: MouseEvent) => any;
-    [CalendarEvents.modeChange]: (mode: string) => any;
-    [CalendarEvents.monthSelected]: (month: number) => any;
-    [CalendarEvents.yearSelected]: (year: number) => any;
-    [CalendarEvents.cancelClick]: () => any;
+    [CalendarEvents.dateMouseOver]: (date: Date, e: MouseEvent) => void;
+    [CalendarEvents.modeChange]: (mode: string) => void;
+    [CalendarEvents.monthSelected]: (month: number) => void;
+    [CalendarEvents.yearSelected]: (year: number) => void;
+    [CalendarEvents.cancelClick]: () => void;
     [CalendarEvents.dateHover]: (date: Date, e: MouseEvent) => any;
 }

@@ -6,6 +6,7 @@ interface ICssManager {
     remove(className: string): void;
     add(cssList: ICssList, customId?: string, silent?: boolean): string;
     get(className: string): ICssList;
+    destructor(): void;
 }
 export declare class CssManager implements ICssManager {
     private _classes;
@@ -15,6 +16,7 @@ export declare class CssManager implements ICssManager {
     remove(className: string): void;
     add(cssList: ICssList, customId?: string, silent?: boolean): string;
     get(className: string): ICssList;
+    destructor(): void;
     private _findSameClassId;
     private _addNewClass;
     private _toCssString;

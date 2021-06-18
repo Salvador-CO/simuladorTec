@@ -15,7 +15,7 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 		<style type="text/css">
 			.cont{
-				height: 500px;
+				height: 300px;
 				
 			}
 			.btn-circle {
@@ -27,6 +27,7 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
                 font-size: 12px;
                 line-height: 1.42857;
             }
+            
 		</style>
 
 	<!-- librerias exel -->
@@ -55,12 +56,12 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
             <!-- Modal content-->
             <div class="modal-content">
                 <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
-                        <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
+                        <p><h2 class="modal-title col-11 text-center">Ayuda</h2></p>
                 </div>
               <div class="modal-body">
                 
 
-                <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+               <embed src="../manual/Excel.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
               </div>      
             </div>
           </div>

@@ -51,11 +51,11 @@ export declare enum ComboboxEvents {
 }
 export interface IComboboxEventHandlersMap {
     [key: string]: (...args: any[]) => any;
-    [ComboboxEvents.change]: (ids: string | string[]) => any;
-    [ComboboxEvents.open]: () => any;
-    [ComboboxEvents.input]: (value: any) => any;
+    [ComboboxEvents.change]: (ids: string | string[]) => void;
+    [ComboboxEvents.open]: () => void;
+    [ComboboxEvents.input]: (value: string) => void;
     [ComboboxEvents.beforeClose]: () => boolean | void;
-    [ComboboxEvents.afterClose]: () => any;
+    [ComboboxEvents.afterClose]: () => void;
     [ComboboxEvents.close]: () => any;
 }
 export interface ICombobox {
