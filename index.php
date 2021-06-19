@@ -217,17 +217,66 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Todos los derechos reservados DASHA | ITT2</div>
+                            <div class="text-muted">Copyright &copy; Todos los derechos reservados DASHA |<a href="http://www.ittlahuac2.edu.mx/inicio"style='text-decoration:none; color: #6c757d;' target="_blank"> ITT2</a></div>
                             <div>
-                                <a href="#">Política de privacidad</a>
+                                <a href="#" data-toggle="modal" data-target="#politica" style='text-decoration:none;color:black;'><i class="fas fa-file-contract"></i> Política de privacidad</a>
                                 &middot;
-                                <a href="#">Términos &amp; condiciones</a>
+                                <a href="#" data-toggle="modal" data-target="#terminos" style='text-decoration:none;color:black;'><i class="fas fa-file-signature"></i> Términos &amp; condiciones</a>
+                                &middot;
+                                <a  href="#" data-toggle="modal" data-target="#RIM" style='text-decoration:none;color:black;'>
+                                <i class="fas fa-file-pdf"></i> RIM 
+                        		</a>
 							</div>
 						</div>
 					</div>
 				</footer>
 			</div>
 		</div>
+		<!-- modal RIM -->
+        <div id="RIM" class="modal fade" role="dialog" style="z-index: 1400;">
+          <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content" >
+              <div class="modal-header" style="background: #1B396A; color: #fff;">
+                   <h3 class="modal-title col-11 text-center"><center>Archivos del RIM</center></h3>
+                </div>
+              <div class="modal-body">
+                    <iframe src="verus.php" width="100%" height="450px"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <!-- modal RIM-->
+        <!-- modal politica -->
+        <div id="politica" class="modal fade" role="dialog" style="z-index: 1400;">
+          <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content" >
+              <div class="modal-header" style="background: #1B396A; color: #fff;">
+                   <h3 class="modal-title col-11 text-center"><center>Política de privacidad</center></h3>
+                </div>
+              <div class="modal-body">
+                    
+              </div>      
+            </div>
+          </div>
+        </div>
+        <!-- modal politica-->
+        <!-- modal terminos -->
+        <div id="terminos" class="modal fade" role="dialog" style="z-index: 1400;">
+          <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content" >
+              <div class="modal-header" style="background: #1B396A; color: #fff;">
+                   <h3 class="modal-title col-11 text-center"><center>Términos &amp; condiciones</center></h3>
+                </div>
+              <div class="modal-body">
+                    
+              </div>      
+            </div>
+          </div>
+        </div>
+        <!-- modal terminos-->
 		<script>
 	    // Example starter JavaScript for disabling form submissions if there are invalid fields
 	    (function() {

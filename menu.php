@@ -50,7 +50,7 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <!--menu si es usuario -->             
+                    <!--menu si es usuario -->             
                         <?php if($tipo_usuario == 2) { ?>
                          <a class="nav-link" href="archivos.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>
@@ -61,40 +61,23 @@
                              <input style="border: none; background: none; color:#fff;"   type="button" value="Calculadora" onclick="javascript:window.open('https://www.desmos.com/scientific?lang=es','','width=450,height=450,toolbar=yes');" />
                         </a>
                         <?php } ?>
-                        <!--fin del menu si es usuario -->
+                    <!--fin del menu si es usuario -->
 
-                        <!--menu si es usuario administrador-->				
+                    <!--menu si es usuario administrador-->				
     					<?php if($tipo_usuario == 1) { ?>
                         <a class="nav-link" href="admin.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>Registro de usuarios
                         </a>
                         <a class="nav-link" href="archivos.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-folder-open"></i></div>Archivos
+                            <div class="sb-nav-link-icon"><i class="fas fa-folder-open"></i></div>Archivos de equipos
+                        </a>
+                         <a class="nav-link" href="cargarim.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-folder-open"></i></div>Archivos para RIM
                         </a>
                         <?php } ?>
     					<!--fin del menu si es usuario administrador-->
 
-                    <!--menu principal simple-->
-                    <!--
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon">
-                                <i class="fas fa-columns"></i>
-                            </div>
-                            Menu principal 
-                            <div class="sb-sidenav-collapse-arrow">
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="vistaclientes.php">Contabilidad</a>
-                                <a class="nav-link" href="proveedores.php">Administracion</a>
-                                <a class="nav-link" href="vistaclientes.php">Economia</a>
-                                <a class="nav-link" href="proveedores.php">Finanzas</a>
-                            </nav>
-                        </div> 
-                    -->
-                    <!--fin del menu principal simple-->
+                   
                 <!--munu desplegable principal-->
                         <?php if($tipo_usuario == 2) { ?>
 <!-- usuario -->
@@ -187,6 +170,7 @@
     			</div>
 <!-- fin de usurio -->
                         <?php }elseif($tipo_usuario == 1) { ?>
+<!-- administrador -->
                         <div class="sb-sidenav-menu-heading">Áreas</div>
                         <a class="nav-link" href="conta/conta_gen.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-donate"></i></div>Contabilidad
@@ -200,6 +184,7 @@
                         </a>
                     </div>
                 </div>
+<!-- administrador -->
                         <?php } ?>
                         
                 <!--footer del menu-->
@@ -210,6 +195,7 @@
     			</div><!--fin footer del menu-->
     		</nav>
     	</div><!--fin del menu lateral-->
+
         <div id="layoutSidenav_content">
         <main>
             <!--continua en los archivos-->

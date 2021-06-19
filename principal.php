@@ -7,6 +7,7 @@
         <meta name="author" content="" />
         <title>Simulador CEA </title>
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/pdf.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <style type="text/css">
@@ -96,19 +97,34 @@
 
             <!--Espacio vacio lineas-->
             <br>
-            <div class="row">
-               <div class="col-xl-6">
-                    <div class="card mb-4">
-                        <embed src="anexos/anexo1.pdf" type="application/pdf" width="100%" height="600px" />
+    <!-- pdf -->
+        <div class="grand_parent">
+            <div class="parents">
+                <?php 
+                    $archivos = scandir("subidas");
+                      $num=0;
+                    for ($i=2; $i<count($archivos); $i++){
+                        $num++;
+                    ?>  
+                <div class="child">
+                    <div class="embed-container">
+                    <iframe src="subidas/<?php echo $archivos[$i]; ?>" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
-
-                <div class="col-xl-6">
-                    <div class="card mb-4">
-                        <embed src="anexos/anexo2.pdf" type="application/pdf" width="100%" height="600px" />
-            		</div>
-            	</div>
+                <?php 
+                }   
+                ?>
             </div>
+            <?php 
+                if ($num===0) {
+                    ?> 
+                    <center><h1>No hay archivos que mostrar</h4></h1></center>
+                    <?php  
+                   }   
+                ?>
+        </div>
+        
+    <!-- pdf -->
              <!--Espacio para anexos-->
             <div class="card mb-4">
                 <div>

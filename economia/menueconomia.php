@@ -50,13 +50,15 @@
                     <div class="nav">
                         <!--menu si es usuario -->             
                         <?php if($tipo_usuario == 2) { ?>
-                         <a class="nav-link" href="../archivos.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>
-                             <input style="border: none; background: none; color:#fff;"   type="button" value="Carga de archivos"  />
+                         <a class="nav-link"  href="../archivos.php"  >
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>Carga de archivos 
                         </a>
                         <a class="nav-link" >
                             <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
                              <input style="border: none; background: none; color:#fff;"   type="button" value="Calculadora" onclick="javascript:window.open('https://www.desmos.com/scientific?lang=es','','width=450,height=450,toolbar=yes');" />
+                        </a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#RIM" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-invoice-dollar"></i></div>RIM 
                         </a>
                         <?php } ?>
                         <!--fin del menu si es usuario -->
@@ -222,7 +224,21 @@
     		</nav>
     	</div><!--fin del menu lateral-->
         <!--modal economia-->
-
+        <!-- modal RIM -->
+        <div id="RIM" class="modal fade" role="dialog" style="z-index: 1400;">
+          <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content" >
+              <div class="modal-header" style="background: #1B396A; color: #fff;">
+                   <h3 class="modal-title col-11 text-center"><center>Archivos del RIM</center></h3>
+                </div>
+              <div class="modal-body">
+                    <iframe src="../verus.php" width="100%" height="450px"></iframe>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <!-- modal RIM-->
           <div id="formulas" class="modal fade" style="z-index: 1400;">
             <div class="modal-dialog modal-lg" role="dialog" >
             <!-- Modal content-->
