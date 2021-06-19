@@ -3,9 +3,11 @@
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Todos los derechos reservados <b> DASHA | ITT2</b></div>
                             <div>
+                                <!--  
                                 <a href="#">Política de privacidad</a>
                                 &middot;
                                 <a href="#">Términos &amp; condiciones</a>
+                                -->
 							</div>
 						</div>
 					</div>

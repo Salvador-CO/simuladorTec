@@ -51,7 +51,8 @@
 				$_SESSION['correo'] = $row['correo'];
 				$_SESSION['escuela'] = $row['escuela'];
 				$_SESSION['telefono'] = $row['telefono'];
-				header("Location: principal.php");
+				
+					header("Location: principal.php");		
 				
 			} else {
 

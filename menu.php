@@ -96,6 +96,8 @@
                     -->
                     <!--fin del menu principal simple-->
                 <!--munu desplegable principal-->
+                        <?php if($tipo_usuario == 2) { ?>
+<!-- usuario -->
                         <!--inicio del menu con submenu-->  
                             <div class="sb-sidenav-menu-heading">Áreas</div>
                         <!--menu de conta-->
@@ -116,10 +118,10 @@
                                         <a class="nav-link" href="conta/balanza_comprobacion.php">Balanza de comprobación</a>
                                         <a class="nav-link" href="conta/estado_resultados.php">Estado de resultados</a>
                                         <a class="nav-link" href="conta/balance_general.php">Balance general</a>
-                                        <a class="nav-link" href="sconta/flujo_efectivo.php">Estado de flujos de efectivo</a>
-                                        <a class="nav-link" href="sconta/variacion_capcontable.php">Estado de variaciones en el capital contable</a>
-                                        <a class="nav-link" href="sconta/costos_prodvent.php">Estado de costos de producción y venta</a>
-                                        <a class="nav-link" href="sconta/analisis_financiero.php">Análisis financiero</a>
+                                        <a class="nav-link" href="conta/flujo_efectivo.php">Estado de flujos de efectivo</a>
+                                        <a class="nav-link" href="conta/variacion_capcontable.php">Estado de variaciones en el capital contable</a>
+                                        <a class="nav-link" href="conta/costos_prodvent.php">Estado de costos de producción y venta</a>
+                                        <a class="nav-link" href="conta/analisis_financiero.php">Análisis financiero</a>
                                     </nav>
                                 </div>
                         <!--fin del menu de conta-->
@@ -183,6 +185,23 @@
                 <!--fin del menu desplegable principal-->   	
                 	</div>
     			</div>
+<!-- fin de usurio -->
+                        <?php }elseif($tipo_usuario == 1) { ?>
+                        <div class="sb-sidenav-menu-heading">Áreas</div>
+                        <a class="nav-link" href="conta/conta_gen.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-donate"></i></div>Contabilidad
+                        </a>
+                        <a class="nav-link" href="admin/admin_gen.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-paste"></i></div>Administración
+                        </a>
+              
+                        <a class="nav-link" href="economia/econ_gen.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>Economía
+                        </a>
+                    </div>
+                </div>
+                        <?php } ?>
+                        
                 <!--footer del menu-->
                 <div class="sb-sidenav-footer">
                     <div class="text-muted">

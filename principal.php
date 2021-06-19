@@ -19,7 +19,7 @@
         </style>
 	</head>
     <?php require "menu.php" ?>
-        <div class="container-fluid" >
+    <div class="container-fluid" >
             <div class="centro">
                 <h1> Simulador CEA de <b>TecNM</b></h1>
             
@@ -28,93 +28,107 @@
                     XXVII Evento Nacional Estudiantil de Ciencias (ENEC)</li>
                 </ol>
             </div>
-        <div class="row">
-            <div class="col-xl-3 col-md-6">
-                <div class="card text-white mb-4" style="background: #651d32">
-                    <div class="card-body">
-                        <i class="fas fa-university"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Contabilidad</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between">
-                        <a class="small text-white stretched-link" href="conta/conta_gen.php">Ver panel de opciones</a>
-                        <div class="small text-white">
-                        <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-					</div>
-				</div>
-			</div>
-             
-            <div class="col-xl-3 col-md-6"> 
-                <div class="card text-white mb-4" style="background: #651d32">
-                    <div class="card-body">
-                        <i class="fa fa-building"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Administración</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between">
-                        <a class="small text-white stretched-link" href="admin/admin_gen.php">Ver panel de opciones</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                        </div>
-					</div>
-				</div>
-			</div>
 
-            <div class="col-xl-3 col-md-6">
-                <div class="card text-white mb-4" style="background: #651d32">
-                    <div class="card-body">
-                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Económia</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between">
-                        <a class="small text-white stretched-link" href="economia/econ_gen.php">Ver panel de opciones</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+    <?php if($tipo_usuario == 2) { ?>       
+
+        <!-- usuario -->        
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card text-white mb-4" style="background: #651d32">
+                        <div class="card-body">
+                            <i class="fas fa-university"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Contabilidad</font>
                         </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="conta/conta_gen.php">Ver panel de opciones</a>
+                            <div class="small text-white">
+                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+    					</div>
     				</div>
-				</div>
-			</div>
-
-            <div class="col-xl-3 col-md-6">
-                <div class="card text-white mb-4" style="background: #651d32">
-                    <div class="card-body">
-                        <i class="fas fa-tools"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Manual de usuario</font>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between">
-                        <a class="small text-white stretched-link" href="#">Ver manual</a>
-                        <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+    			</div>
+                 
+                <div class="col-xl-3 col-md-6"> 
+                    <div class="card text-white mb-4" style="background: #651d32">
+                        <div class="card-body">
+                            <i class="fa fa-building"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Administración</font>
                         </div>
-					</div>
-				</div>
-			 </div>
-	    </div><!--fin de ROW-->
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="admin/admin_gen.php">Ver panel de opciones</a>
+                            <div class="small text-white">
+                                <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+    					</div>
+    				</div>
+    			</div>
 
-        <!--Espacio vacio lineas-->
-        <br>
-        <div class="row">
-           <div class="col-xl-6">
-                <div class="card mb-4">
-                    <embed src="anexos/anexo1.pdf" type="application/pdf" width="100%" height="600px" />
+                <div class="col-xl-3 col-md-6">
+                    <div class="card text-white mb-4" style="background: #651d32">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Económia</font>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="economia/econ_gen.php">Ver panel de opciones</a>
+                            <div class="small text-white">
+                                <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+        				</div>
+    				</div>
+    			</div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card text-white mb-4" style="background: #651d32">
+                        <div class="card-body">
+                            <i class="fas fa-tools"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Manual de usuario</font>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">Ver manual</a>
+                            <div class="small text-white">
+                                <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+    					</div>
+    				</div>
+    			 </div>
+    	    </div><!--fin de ROW-->
+
+            <!--Espacio vacio lineas-->
+            <br>
+            <div class="row">
+               <div class="col-xl-6">
+                    <div class="card mb-4">
+                        <embed src="anexos/anexo1.pdf" type="application/pdf" width="100%" height="600px" />
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-xl-6">
-                <div class="card mb-4">
-                    <embed src="anexos/anexo2.pdf" type="application/pdf" width="100%" height="600px" />
-        		</div>
-        	</div>
-        </div>
-         <!--Espacio para anexos-->
-        <div class="card mb-4">
-            <div>
-                <!--<embed src="anexos/anexo1.pdf" type="application/pdf" width="100%" height="600px" />
-                <embed src="anexos/anexo1.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />-->
+                <div class="col-xl-6">
+                    <div class="card mb-4">
+                        <embed src="anexos/anexo2.pdf" type="application/pdf" width="100%" height="600px" />
+            		</div>
+            	</div>
             </div>
-		</div>
+             <!--Espacio para anexos-->
+            <div class="card mb-4">
+                <div>
+                    <!--<embed src="anexos/anexo1.pdf" type="application/pdf" width="100%" height="600px" />
+                    <embed src="anexos/anexo1.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />-->
+                </div>
+    		</div>
+        <!-- fin de usuario -->  
+
+    <?php }elseif ($tipo_usuario == 1){
+    ?> 
+        <h1>admin</h1>
+    <!--PARTE DE ADMINISTRADOR  -->
+        
+    <!--PARTE DE ADMINISTRADOR  -->
+    <?php    
+    } ?>
 
 			<!--etiquetas de cierre-->		
-        </div>
+    </div>
 	</main>
 
     <footer class="py-4 bg-light mt-auto">
@@ -122,9 +136,7 @@
             <div class="d-flex align-items-center justify-content-between small">
                 <div class="text-muted">Copyright &copy; Todos los derechos reservados <b> DASHA | ITT2</b></div>
                 <div>
-                    <a href="#">Política de privacidad</a>
-                    &middot;
-                    <a href="#">Términos &amp; condiciones</a>
+        
 				</div>
 			</div>
 		</div>
