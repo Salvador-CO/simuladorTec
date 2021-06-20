@@ -44,16 +44,7 @@
 
 	</main>
 
-    <footer class="py-4 bg-light mt-auto">
-        <div class="container-fluid">
-            <div class="d-flex align-items-center justify-content-between small">
-                <div class="text-muted">Copyright &copy; Todos los derechos reservados <b> DASHA | ITT2</b></div>
-                <div>
-        
-				</div>
-			</div>
-		</div>
-	</footer>
+    
 	</div>
 	</div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
