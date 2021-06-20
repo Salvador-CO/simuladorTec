@@ -86,7 +86,7 @@
                             <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Manual de usuario</font>
                         </div>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="#">Ver manual</a>
+                            <a class="small text-white stretched-link" href="manual.php">Ver manual</a>
                             <div class="small text-white">
                                 <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
                             </div>

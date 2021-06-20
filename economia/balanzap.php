@@ -66,7 +66,7 @@
                     </div>
                   <div class="modal-body">
                    <!--   contenido -->
-                    <iframe src="#" width="100%" height="450px" style="border:0px"></iframe>
+                    <embed src="../manual/Balanzap.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
                   </div>      
                 </div>
             </div>
@@ -166,6 +166,14 @@
 	<!-- principal -->
 		<div class="prin">
 			<!-- Tabla 1 - Balanza de cuenta corriente -->
+			<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+	            <ul class="list-unstyled" style="margin-bottom: 0;">
+	              <li><strong>Nota:</strong> Registra balanza de cuenta corriente. <i class="fas fa-edit"></i> </li>
+	            </ul>
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	              <span aria-hidden="true">×</span>
+	            </button>
+        	</div>
 			<table class="table">
 				<thead align="center">
 			  		<tr class="titulotabla">
@@ -247,6 +255,14 @@
 			</table>
 			<!-- Tabla 2 - Balanza de cuenta capital -->
 			<table class="table">
+				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+		            <ul class="list-unstyled" style="margin-bottom: 0;">
+		              <li><strong>Nota:</strong> Registra balanza de cuenta capital. <i class="fas fa-edit"></i> </li>
+		            </ul>
+		            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		              <span aria-hidden="true">×</span>
+		            </button>
+        		</div>
 				<thead align="center">
 			  		<tr class="titulotabla">
 			      	<th scope="col" colspan="5" >Balanza de Cuenta Capital</th>
@@ -337,6 +353,14 @@
 			</table>
 			<!-- Tabla 3 - Balanza financiera -->
 			<table class="table">
+				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+		            <ul class="list-unstyled" style="margin-bottom: 0;">
+		              <li><strong>Nota:</strong> Registra balanza financiera. <i class="fas fa-edit"></i> </li>
+		            </ul>
+		            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		              <span aria-hidden="true">×</span>
+		            </button>
+        		</div>
 				<thead align="center">
 			  		<tr class="titulotabla">
 			      	<th scope="col" colspan="5" >Balanza Financiera</th>
@@ -416,6 +440,14 @@
 			</table>
 			<!-- Tabla 4 - Balanza de pagos-->
 			<table class="table">
+				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+		            <ul class="list-unstyled" style="margin-bottom: 0;">
+		              <li><strong>Nota:</strong> Registra balanza de pagos. <i class="fas fa-edit"></i> </li>
+		            </ul>
+		            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		              <span aria-hidden="true">×</span>
+		            </button>
+        		</div>
 				<thead align="center">
 			  		<tr class="titulotabla">
 			      	<th scope="col" colspan="5" >Balanza de Pagos</th>
@@ -495,6 +527,14 @@
 			</table>
 			<!-- Tabla 5 - Errores y omisiones-->
 			<table class="table">
+				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+		            <ul class="list-unstyled" style="margin-bottom: 0;">
+		              <li><strong>Nota:</strong> Registra balanza errores y omisiones. <i class="fas fa-edit"></i> </li>
+		            </ul>
+		            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		              <span aria-hidden="true">×</span>
+		            </button>
+        		</div>
 				<thead align="center">
 			  		<tr class="titulotabla">
 			      	<th scope="col" colspan="5" >Balanza de Errores y Omisiones</th>
