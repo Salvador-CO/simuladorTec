@@ -7,22 +7,32 @@
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <title>Balanza de pgos</title>
+        <title>Cobb Douglas</title>
+        <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
+        
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+		<script src="librerias/ckeditor/ckeditor.js"></script>
 	</head>
 
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Sitema Contable ITT2</h1></center>
+	    	<center><h1 class="mt-4">Cobb Douglas</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active">Pagina Principal</li>
+	        <li class="breadcrumb-item active"></li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
-			<h1>EJEMPLO</h1>
+  	     <button  type="button" class="btn btn-outline-info"  ><a href="https://www.google.com.mx/imghp?hl=en&ogbl" style='text-decoration:none; color: #000;' target="_blank"><i class="far fa-images"></i></a> </button>
+        <textarea name="editor" id="editor">
+        </textarea>
+
+        <script>
+            CKEDITOR.replace("editor");
+        </script>
+		<br>
 		</div>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
-		   	<h1>EJEMPLO</h1>
+		   	
 
 	<!---->
 	   	</main>

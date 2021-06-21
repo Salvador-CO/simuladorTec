@@ -3,7 +3,8 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Simulador CEA </title>
+        <title>Usuarios </title>
+        <link rel="icon" type="image/png" sizes="192x192"  href="iconos/tecnm.png">
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         
@@ -26,7 +27,7 @@
 
          
         <div class="container-fluid">
-            <h1> Panel de Usuarios</h1>
+            <center><h1> Panel de Usuarios</h1></center>
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item active">Este aparatado es único para el administrador en el cual se observan los usuarios que se han registrado con la finalidad de poder tener un control.</li>
         </ol>

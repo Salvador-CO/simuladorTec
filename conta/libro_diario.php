@@ -11,6 +11,8 @@
         <link rel="stylesheet" type="text/css" href="css/emergente.css">
         <link rel="stylesheet" type="text/css" href="css/genConta.css">
         <title>Libro diario</title>
+        <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
+        
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<!--  <link rel="stylesheet" href="assets/css/main.css" />-->

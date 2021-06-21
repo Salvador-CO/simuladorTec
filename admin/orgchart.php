@@ -11,6 +11,8 @@ Para cualquier duda y/o aclaración comunicarse a los correos:
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Tabla dinamica</title>
+        <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
+    
     <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
     <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">

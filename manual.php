@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Simulador CEA </title>
+        <link rel="icon" type="image/png" sizes="192x192"  href="iconos/tecnm.png">
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/pdf.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -30,14 +31,13 @@
                 </ol>
             </div>
     </div>
-    <div class="grand_parent">
-        <div class="parents">
-            <div class="child">
-                <embed src="manual/Manual_de_usuario.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
-            </div>
+    <div  align="center">
+        
+          <embed src="manual/Manual_de_usuario.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="80%" height="500px" />
+           
         </div>
-    </div>
-
+   
+    <br>
 
 
 

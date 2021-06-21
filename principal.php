@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Simulador CEA </title>
+        <link rel="icon" type="image/png" sizes="192x192"  href="iconos/tecnm.png">
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/pdf.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -136,9 +137,57 @@
 
     <?php }elseif ($tipo_usuario == 1){
     ?> 
-        <h1>admin</h1>
     <!--PARTE DE ADMINISTRADOR  -->
-        
+        <!--fin de ROW-->
+        <div class="row justify-content-center">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card text-white mb-4" style="background: #002F6C">
+                        <div class="card-body">
+                            <i class="fas fa-user-plus" style="color:#FFFFFF; width:20; height:20;" ></i> 
+
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Registro de usuarios</font>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="admin.php">Ver panel </a>
+                            <div class="small text-white">
+                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-xl-3 col-md-6"> 
+                    <div class="card text-white mb-4" style="background: #002F6C">
+                        <div class="card-body">
+                            <i class="fas fa-book-reader"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Archivos de equipo</font>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="archivos.php">Ver panel de opciones</a>
+                            <div class="small text-white">
+                                <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card text-white mb-4" style="background: #002F6C">
+                        <div class="card-body">
+                            <i class="fas fa-upload"style="color:#FFFFFF; width:20; height:20;" ></i> 
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Archivos para RIM</font>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="cargarim.php">Ver panel de opciones</a>
+                            <div class="small text-white">
+                                <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--fin de ROW-->
+
     <!--PARTE DE ADMINISTRADOR  -->
     <?php    
     } ?>

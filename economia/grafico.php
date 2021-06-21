@@ -10,6 +10,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Highcharts Example</title>
+        <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
+        
 
 		<style type="text/css">
         #container {
