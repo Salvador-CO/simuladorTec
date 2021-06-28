@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/tooltip.css">
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <title>Economía</title>
         <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
@@ -102,6 +103,7 @@
 		</ol>
 
 		<font size="2"><p style="text-align: justify;"><b> Competencias: </b> Determinar y aplicar la oferta y la demanda y su elasticidad a través de las diferentes funciones matemáticas. Aplica el modelo de oferta y demanda agregada para determinar los efectos de la política económica en el equilibrio macroeconómico. Comprende, analiza, y calcula los componentes básicos de las Cuentas Nacionales.  </p></font>
+    
         
 		<!--Contenido dentro del div con margen-->
        </div>
@@ -111,85 +113,54 @@
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-book"style="color:#FFFFFF; width:20; height:20;" ></i>  
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Área de uso general (Word)</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Área de uso general</font>
                     </div>
-                    <div class="footer">
-                        <a href="espacioredaccion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                    <div class="footer" >
+                        <a href="areausogeneral.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <br>
+                        <div class="avatar" align="center" data-tooltip="Procesador de texto  Area para Graficar Regresión lineal" title="Paneles Internos"></div>
                     </div>
                 </div>
 
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Regresión lineal</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Microeconomía</font>
                     </div>
                     <div class="footer">
-                        <a  href="regresionlineal.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a  href="micro.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <br>
+                        <div class="avatar" align="center" data-tooltip="Teoria del consumidor Teroia de la producción" title="Paneles Internos"></div>
                     </div>
                 </div>
 
                 <div class="child">
                     <div class="titu">
                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Modelo IS - LM</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Macroeconomía</font>
                     </div>
                     <div class="footer">
-                        <a href="modelo_islm.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a href="macro.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <br>
+                        <div class="avatar" data-tooltip="Posibilidades/producción Cuentas nacionales. Modelo Keynesiano. Modelo IS - LM." title="Paneles Internos"></div>
                     </div>
                 </div>
 
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Balanza de pagos</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Internacional</font>
                     </div>
                     <div class="footer">
-                        <a href="balanzap.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a href="internacional.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <br>
+                        <div class="avatar" align="center" data-tooltip="..Balanza de pagos.. ..Tipo de cambio.." title="Paneles Internos"></div>
                     </div>
                 </div>
 
-                <div class="child">
-                    <div class="titu">
-                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Posibilidades de producción</font>
-                    </div>
-                    <div class="footer">
-                        <a  href="pos_producion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
-                    </div>
-                </div>
-
-                <div class="child">
-                    <div class="titu">
-                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Punto de saturación</font>
-                    </div>
-                    <div class="footer">
-                        <a  href="pun_saturacion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
-                    </div>
-                </div>
-
-                <div class="child">
-                    <div class="titu">
-                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i>
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Punto de equilibrio</font>
-                    </div>
-                    <div class="footer">
-                        <a href="punt_equilibrio.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
-                    </div>
-                </div>
-
-                <div class="child">
-                    <div class="titu">
-                        <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Cobb Douglas</font>
-                    </div>
-                    <div class="footer">
-                        <a  href="Cobbdouglas.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
-                    </div>
-                </div>
             </div>
     </div>
-    <br>
+    
 
 	
 

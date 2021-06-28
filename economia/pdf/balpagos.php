@@ -9,6 +9,7 @@
 <?php
 	require('fpdf/fpdf.php');
 	require ('../../conta/pdf/cn.php');
+	require ('../../conexion.php');
 	 $sqlt = "SELECT * FROM encabezadoeco WHERE nom_us='$nombre'";
 			$resultadot = $mysqli->query($sqlt);
 			$titulo = $resultadot->fetch_assoc();
@@ -91,29 +92,31 @@
 	// Balanza de Cuenta Corriente
 		$sql= "SELECT * FROM `regbalanza` WHERE `tipo`='BCC' && `nom_us`='$nombre'";
 		$resultado = $mysqli->query($sql);
-				$pdf->SetFillColor(111, 235, 198  );
+				$pdf->SetFillColor(000, 000, 000  );
+				$pdf->SetTextColor(255, 255, 255  );
 				$pdf->Cell(261, 10, 'Balanza de cuenta corriente', 1, 0, 'C',true);
+				$pdf->SetTextColor(000, 000, 000 );
 				$pdf->Ln();
 				$pdf->SetFillColor(169, 223, 191   );
-				$pdf->Cell(111, 10, 'concepto', 1, 0, 'C',true);
+				$pdf->Cell(111, 10, 'Concepto', 1, 0, 'C',true);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'ingresos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Ingresos', 1, 0, 'C',1);
 				$pdf->SetFillColor(171, 235, 198  );
-				$pdf->Cell(50, 10,'pagos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Pagos', 1, 0, 'C',1);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'saldos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Saldos', 1, 0, 'C',1);
 				
 				$pdf->Ln();
 
 		while ($row=$resultado->fetch_assoc()) {
 				
-				$pdf->SetFillColor(111, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255  );
 				$pdf->Cell(111, 10, utf8_decode($row['concepto']), 1, 0, 'C',true);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['ingresos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(171, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255  );
 				$pdf->Cell(50, 10, $row['pagos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['saldos'], 1, 0, 'C',1);
 				
 				$pdf->Ln(15);
@@ -123,29 +126,31 @@
 
 $sql= "SELECT * FROM `regbalanza` WHERE `tipo`='BCCap' && `nom_us`='$nombre' ";
 $resultado = $mysqli->query($sql);
-	$pdf->SetFillColor(111, 235, 198  );
+	$pdf->SetFillColor(000, 000, 000  );
+				$pdf->SetTextColor(255, 255, 255  );
 				$pdf->Cell(261, 10, 'Balanza de cuenta capital', 1, 0, 'C',true);
+				$pdf->SetTextColor(000, 000, 000 );
 				$pdf->Ln();
 				$pdf->SetFillColor(169, 223, 191  );
-				$pdf->Cell(111, 10, 'concepto', 1, 0, 'C',true);
+				$pdf->Cell(111, 10, 'Concepto', 1, 0, 'C',true);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'ingresos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Ingresos', 1, 0, 'C',1);
 				$pdf->SetFillColor(171, 235, 198  );
-				$pdf->Cell(50, 10,'pagos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Pagos', 1, 0, 'C',1);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'saldos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Saldos', 1, 0, 'C',1);
 				
 				$pdf->Ln();
 				
 		while ($row=$resultado->fetch_assoc()) {
 				
-				$pdf->SetFillColor(111, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(111, 10, utf8_decode($row['concepto']), 1, 0, 'C',true);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['ingresos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(171, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255  );
 				$pdf->Cell(50, 10, $row['pagos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['saldos'], 1, 0, 'C',1);
 				
 				$pdf->Ln(15);
@@ -156,105 +161,120 @@ $resultado = $mysqli->query($sql);
 $sql= "SELECT * FROM `regbalanza` WHERE `tipo`='BF' && `nom_us`= '$nombre' ";
 	$resultado = $mysqli->query($sql);
 
-	$pdf->SetFillColor(111, 235, 198  );
+	$pdf->SetFillColor(000, 000, 000  );
+				$pdf->SetTextColor(255, 255, 255  );
 				$pdf->Cell(261, 10, 'Balanza Financiera', 1, 0, 'C',true);
+				$pdf->SetTextColor(000, 000, 000   );
 				$pdf->Ln();
 
 				$pdf->SetFillColor(169, 223, 191   );
-				$pdf->Cell(111, 10, 'concepto', 1, 0, 'C',true);
+				$pdf->Cell(111, 10, 'Concepto', 1, 0, 'C',true);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'ingresos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Ingresos', 1, 0, 'C',1);
 				$pdf->SetFillColor(171, 235, 198  );
-				$pdf->Cell(50, 10,'pagos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Pagos', 1, 0, 'C',1);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'saldos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Saldos', 1, 0, 'C',1);
 				
 				$pdf->Ln();
 				
 		while ($row=$resultado->fetch_assoc()) {
 				
-				$pdf->SetFillColor(111, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(111, 10, utf8_decode($row['concepto']), 1, 0, 'C',true);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['ingresos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(171, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['pagos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['saldos'], 1, 0, 'C',1);
 				
 				$pdf->Ln(15);
 			}
-
-
-
-// Balanza de pagos
-$sql= " SELECT * FROM `regbalanza` WHERE `tipo`='BP' && `nom_us`='$nombre' ";
-$resultado = $mysqli->query($sql);
-
-	$pdf->SetFillColor(111, 235, 198  );
-				$pdf->Cell(261, 10, 'Balanza de Pagos', 1, 0, 'C',true);
-				$pdf->Ln();
-				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(111, 10, 'concepto', 1, 0, 'C',true);
-				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'ingresos', 1, 0, 'C',1);
-				$pdf->SetFillColor(171, 235, 198  );
-				$pdf->Cell(50, 10,'pagos', 1, 0, 'C',1);
-				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'saldos', 1, 0, 'C',1);
-				
-				$pdf->Ln();
-				
-		while ($row=$resultado->fetch_assoc()) {
-				
-				$pdf->SetFillColor(111, 235, 198  );
-				$pdf->Cell(111, 10, utf8_decode($row['concepto']), 1, 0, 'C',true);
-				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10, $row['ingresos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(171, 235, 198  );
-				$pdf->Cell(50, 10, $row['pagos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10, $row['saldos'], 1, 0, 'C',1);
-				
-				$pdf->Ln(15);
-			}
-
-
-
 
 
 // Balanza de Errores y Omisiones
 $sql= "SELECT * FROM `regbalanza` WHERE `tipo`='EO' && `nom_us`= '$nombre' ";
 	$resultado = $mysqli->query($sql);
 
-	$pdf->SetFillColor(111, 235, 198  );
+	$pdf->SetFillColor(000, 000, 000  );
+				$pdf->SetTextColor(255, 255, 255  );
 				$pdf->Cell(261, 10, 'Balanza de Errores y Omisiones', 1, 0, 'C',true);
+				$pdf->SetTextColor(000, 000, 000  );
 				$pdf->Ln();
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(111, 10, 'concepto', 1, 0, 'C',true);
+				$pdf->Cell(111, 10, 'Concepto', 1, 0, 'C',true);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'ingresos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Ingresos', 1, 0, 'C',1);
 				$pdf->SetFillColor(171, 235, 198  );
-				$pdf->Cell(50, 10,'pagos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Pagos', 1, 0, 'C',1);
 				$pdf->SetFillColor(169, 223, 191 );
-				$pdf->Cell(50, 10,'saldos', 1, 0, 'C',1);
+				$pdf->Cell(50, 10,'Saldos', 1, 0, 'C',1);
 				
 				$pdf->Ln();
 				
 		while ($row=$resultado->fetch_assoc()) {
 				
-				$pdf->SetFillColor(111, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(111, 10, utf8_decode($row['concepto']), 1, 0, 'C',true);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255 );
 				$pdf->Cell(50, 10, $row['ingresos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(171, 235, 198  );
+				$pdf->SetFillColor(255, 255, 255  );
 				$pdf->Cell(50, 10, $row['pagos'], 1, 0, 'C',1);
-				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->SetFillColor(255, 255, 255);
 				$pdf->Cell(50, 10, $row['saldos'], 1, 0, 'C',1);
 				
 				$pdf->Ln(15);
 			}
 
+	// Balanza de Errores y Omisiones
+				$In = "SELECT SUM(ingresos) FROM `regbalanza` where nom_us='$nombre'";
+			  $pa = "SELECT SUM(pagos) FROM `regbalanza` where nom_us='$nombre'";
+			  $sal = "SELECT SUM(saldos) FROM `regbalanza` where nom_us='$nombre'";
+					$resIn = mysqli_query($conexion, $In);
+					$respa = mysqli_query($conexion, $pa);
+					$ressal = mysqli_query($conexion, $sal);
+		                $datoIn = $resIn->fetch_assoc();
+		                $datopa = $respa->fetch_assoc();
+		                $datosal = $ressal->fetch_assoc();
+		              if(isset($datoIn['SUM(ingresos)']) && isset($datopa['SUM(pagos)']) && isset($datosal['SUM(saldos)'])){
+		                $mosIn = $datoIn['SUM(ingresos)'];
+		                $mospa = $datopa['SUM(pagos)'];
+		                $mossal = $datosal['SUM(saldos)'];
+		              }else{
+		                $mosIn="0";
+		                $mospa="0";
+		                $mossal="0";
+		                } 
+
+	$pdf->SetFillColor(000, 000, 000  );
+				$pdf->SetTextColor(255, 255, 255  );
+				$pdf->Cell(261, 10, 'Saldos Totales de la balanza', 1, 0, 'C',true);
+				$pdf->SetTextColor(000, 000, 000  );
+				$pdf->Ln();
+				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->Cell(111, 10, 'Concepto', 1, 0, 'C',true);
+				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->Cell(50, 10,'Ingresos', 1, 0, 'C',1);
+				$pdf->SetFillColor(171, 235, 198  );
+				$pdf->Cell(50, 10,'Pagos', 1, 0, 'C',1);
+				$pdf->SetFillColor(169, 223, 191 );
+				$pdf->Cell(50, 10,'Saldos', 1, 0, 'C',1);
+				
+				$pdf->Ln();
+				
+			
+				$pdf->SetFillColor(255, 255, 255 );
+				$pdf->Cell(111, 10, utf8_decode('Saldos Totales de la balanza'), 1, 0, 'C',true);
+				$pdf->SetFillColor(255, 255, 255 );
+				$pdf->Cell(50, 10, $mosIn, 1, 0, 'C',1);
+				$pdf->SetFillColor(255, 255, 255  );
+				$pdf->Cell(50, 10, $mospa, 1, 0, 'C',1);
+				$pdf->SetFillColor(255, 255, 255);
+				$pdf->Cell(50, 10, $mossal, 1, 0, 'C',1);
+				
+				$pdf->Ln(15);
+	
 	 
 
 	$pdf->Ln();$pdf->Ln();

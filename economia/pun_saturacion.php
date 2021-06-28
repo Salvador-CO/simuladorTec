@@ -10,7 +10,7 @@
         <meta name="author" content="" />
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
-        <title>Punto de saturacion</title>
+        <title>Teoria de la utilidad total y marginal</title>
         <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
         
         <style type="text/css">
@@ -36,7 +36,7 @@
         <?php require "menueconomia.php" ?>
                 <!--Titulo-->
                 <div class="container-fluid">
-                <center><h1 class="mt-4">Punto de saturación <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
+                <center><h1 class="mt-4">Teoria de la utilidad total y marginal <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item active"><b>Instrucciones:</b></li>
                 </ol>

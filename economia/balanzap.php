@@ -167,7 +167,7 @@
 	<br>
 	<!-- principal -->
 		<div class="prin">
-			<!-- Tabla 1 - Balanza de cuenta corriente -->
+		<!-- Tabla 1 - Balanza de cuenta corriente -->
 			<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
 	            <ul class="list-unstyled" style="margin-bottom: 0;">
 	              <li><strong>Nota:</strong> Registra balanza de cuenta corriente. <i class="fas fa-edit"></i> </li>
@@ -213,15 +213,15 @@
 					?>
 					 <tr>
 				      <th scope="row"> <?php echo $con;?></th>
-				      <td align="right"><?php echo number_format($ing,2); ?></td>
-				      <td align="right"><?php echo number_format($pag,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($ing,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($pag,2); ?></td>
 				      <?php if ($sal<0){
 				      ?>
-				      	<td align="right" style="color: red;"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right" style="color: red;"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php 	
 				      }else{
 				      ?>
-				      	<td align="right"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php
 				      } ?>
 				      <td><center><a href="balanza/eliminar_reg.php?no=<?php echo $id; ?>" > <button type="button" class="btn " onclick="return Confirmation()" ><i class="fas fa-trash-alt"></i></button> </a></center></td>
@@ -249,13 +249,15 @@
 
 			  		<tr class="titulotabla">
 			  			<td> <strong>Saldo por balanza cuenta corriente</strong> </td>
-			  			<td align="right"><?php echo number_format($ingreBCC,2); ?></td>
-			  			<td align="right"><?php echo number_format($pagBCC,2); ?></td>
-			  			<td align="right"><?php echo number_format($salBCC,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($ingreBCC,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($pagBCC,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($salBCC,2); ?></td>
 			  		</tr>
 			  	</tfoot>
 			</table>
-			<!-- Tabla 2 - Balanza de cuenta capital -->
+		<!--  -->
+
+		<!-- Tabla 2 - Balanza de cuenta capital -->
 			<table class="table">
 				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
 		            <ul class="list-unstyled" style="margin-bottom: 0;">
@@ -301,15 +303,15 @@
 					?>
 					  <tr>
 				      <th scope="row"> <?php echo $con;?></th>
-				      <td align="right"><?php echo number_format($ing,2); ?></td>
-				      <td align="right"><?php echo number_format($pag,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($ing,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($pag,2); ?></td>
 				      <?php if ($sal<0){
 				      ?>
-				      	<td align="right" style="color: red;"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right" style="color: red;"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php 	
 				      }else{
 				      ?>
-				      	<td align="right"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php
 				      } ?>
 				      <td><center><a href="balanza/eliminar_reg.php?no=<?php echo $id; ?>" > <button type="button" class="btn " onclick="return Confirmation()" ><i class="fas fa-trash-alt"></i></button> </a></center></td>
@@ -336,24 +338,26 @@
 			  	?>
 			  		<tr class="titulotabla">
 			  			<td> <strong>Saldo por balanza cuenta capital</strong> </td>
-			  			<td align="right"><?php echo number_format($ingreBCCap,2); ?></td>
-			  			<td align="right"><?php echo number_format($pagBCCap,2); ?></td>
-			  			<td align="right"><?php echo number_format($salBCCap,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($ingreBCCap,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($pagBCCap,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($salBCCap,2); ?></td>
 			  		</tr>
-			  		<tr class="titulotabla">
+			  		<!--  <tr class="titulotabla">
 			  			<td> <strong>BALANZA DE CTA CORRIENTE + CTA CAPITAL</strong> </td>
 			  			<?php 
 			  				$ingreCCCC=($ingreBCC)+($ingreBCCap);
 			  				$pagCCCC=($pagBCC)+($pagBCCap);
 			  				$salCCCC=($salBCC)+($salBCCap);
 			  			 ?>
-			  			<td align="right"> <strong><?php echo number_format($ingreCCCC,2); ?></strong></td>
-			  			<td align="right"> <strong><?php echo number_format($pagCCCC,2); ?></strong></td>
-			  			<td align="right"> <strong><?php echo number_format($salCCCC,2); ?></strong></td>
-			  		</tr>
+			  			<td align="right"> <strong><?php echo "$ ".number_format($ingreCCCC,2); ?></strong></td>
+			  			<td align="right"> <strong><?php echo "$ ".number_format($pagCCCC,2); ?></strong></td>
+			  			<td align="right"> <strong><?php echo "$ ".number_format($salCCCC,2); ?></strong></td>
+			  		</tr>-->
 			  	</tfoot>
 			</table>
-			<!-- Tabla 3 - Balanza financiera -->
+		<!--  -->	
+
+		<!-- Tabla 3 - Balanza financiera -->
 			<table class="table">
 				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
 		            <ul class="list-unstyled" style="margin-bottom: 0;">
@@ -399,15 +403,15 @@
 					?>
 					  <tr>
 				      <th scope="row"> <?php echo $con;?></th>
-				      <td align="right"><?php echo number_format($ing,2); ?></td>
-				      <td align="right"><?php echo number_format($pag,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($ing,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($pag,2); ?></td>
 				      <?php if ($sal<0){
 				      ?>
-				      	<td align="right" style="color: red;"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right" style="color: red;"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php 	
 				      }else{
 				      ?>
-				      	<td align="right"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php
 				      } ?>
 				      <td><center><a href="balanza/eliminar_reg.php?no=<?php echo $id; ?>" > <button type="button" class="btn " onclick="return Confirmation()" ><i class="fas fa-trash-alt"></i></button> </a></center></td>
@@ -434,100 +438,15 @@
 			  	?>
 			  		<tr class="titulotabla">
 			  			<td> <strong>Saldo por balanza financiera</strong> </td>
-			  			<td align="right"><?php echo number_format($ingreBF,2); ?></td>
-			  			<td align="right"><?php echo number_format($pagBF,2); ?></td>
-			  			<td align="right"><?php echo number_format($salBF,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($ingreBF,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($pagBF,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($salBF,2); ?></td>
 			  		</tr>
 			  	</tfoot>
 			</table>
-			<!-- Tabla 4 - Balanza de pagos-->
-			<table class="table">
-				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
-		            <ul class="list-unstyled" style="margin-bottom: 0;">
-		              <li><strong>Nota:</strong> Registra balanza de pagos. <i class="fas fa-edit"></i> </li>
-		            </ul>
-		            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		              <span aria-hidden="true">×</span>
-		            </button>
-        		</div>
-				<thead align="center">
-			  		<tr class="titulotabla">
-			      	<th scope="col" colspan="5" >Balanza de Pagos</th>
-			    	</tr>
-				    <tr class="titulotabla">
-				      <th scope="col">Concepto</th>
-				      <th scope="col">Ingresos</th>
-				      <th scope="col">Pagos</th>
-				      <th scope="col">Saldos</th>
-				      <th><button type="button" class="btn btn-info " data-toggle="modal" data-target="#test4"><i class="fas fa-edit" aria-hidden="true"></i></button></th>
-				    </tr>
-			  	</thead>
-			  	<tbody>
-				  	<?php
-				  	$sql4 = "SELECT * FROM regbalanza WHERE nom_us='$nombre' && tipo = 'BP'";
-	            	$consulta4 = mysqli_query($conexion, $sql4);
-	            	if ($consulta4->num_rows === 0) {
-				  	?>
-				  	<tr>
-				      <th scope="row"></th>
-				      <td></td>
-				      <td></td>
-				      <td></td>
-				      <td></td>
-				    </tr>
-				    <?php
-					} else {
-						 while($rowedit = mysqli_fetch_array($consulta4)){
-			                $id=$rowedit["id"];
-			                $con = $rowedit["concepto"];
-			                $ing = $rowedit["ingresos"];
-			                $pag = $rowedit["pagos"];
-			                $sal = $rowedit["saldos"];
-					?>
-					  <tr>
-				      <th scope="row"> <?php echo $con;?></th>
-				      <td align="right"><?php echo number_format($ing,2); ?></td>
-				      <td align="right"><?php echo number_format($pag,2); ?></td>
-				      <?php if ($sal<0){
-				      ?>
-				      	<td align="right" style="color: red;"><?php echo number_format($sal,2); ?></td>
-				      <?php 	
-				      }else{
-				      ?>
-				      	<td align="right"><?php echo number_format($sal,2); ?></td>
-				      <?php
-				      } ?>
-				      <td><center><a href="balanza/eliminar_reg.php?no=<?php echo $id; ?>" > <button type="button" class="btn " onclick="return Confirmation()" ><i class="fas fa-trash-alt"></i></button> </a></center></td>
-				    </tr>
-					<?php
-					} //Fin del while
-					} //Fin del else general
-					?>
-			  	</tbody>
-			  	<tfoot>
-			  	<?php 
-			  	  	$InBP = "SELECT SUM(`ingresos`) AS 'InBP',SUM(`pagos`) AS 'PaBP',SUM(`saldos`) AS 'salBP' FROM `regbalanza` WHERE `tipo`='BP' && nom_us='$nombre'";
-					$resMD = mysqli_query($conexion, $InBP);
-	                $datoMD = $resMD->fetch_assoc();
-	            if(isset($datoMD['InBP'], $datoMD['PaBP'], $datoMD['salBP'])){
-	                $ingreBP= $datoMD['InBP'];
-	                $pagBP= $datoMD['PaBP'];
-	                $salBP= $datoMD['salBP'];
-	            }else{
-	                $ingreBP= 0;
-	                $pagBP= 0;
-	                $salBP= 0;
-	                }
-			  	?>
-			  		<tr class="titulotabla">
-			  			<td> <strong>Saldo por balanza de pagos</strong> </td>
-			  			<td align="right"><?php echo number_format($ingreBP,2); ?></td>
-			  			<td align="right"><?php echo number_format($pagBP,2); ?></td>
-			  			<td align="right"><?php echo number_format($salBP,2); ?></td>
-			  		</tr>
-			  	</tfoot>
-			</table>
-			<!-- Tabla 5 - Errores y omisiones-->
+		<!--  -->
+
+		<!-- Tabla 5 - Errores y omisiones-->
 			<table class="table">
 				<div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
 		            <ul class="list-unstyled" style="margin-bottom: 0;">
@@ -573,15 +492,15 @@
 					?>
 					  <tr>
 				      <th scope="row"> <?php echo $con;?></th>
-				      <td align="right"><?php echo number_format($ing,2); ?></td>
-				      <td align="right"><?php echo number_format($pag,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($ing,2); ?></td>
+				      <td align="right"><?php echo "$ ".number_format($pag,2); ?></td>
 				      <?php if ($sal<0){
 				      ?>
-				      	<td align="right" style="color: red;"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right" style="color: red;"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php 	
 				      }else{
 				      ?>
-				      	<td align="right"><?php echo number_format($sal,2); ?></td>
+				      	<td align="right"><?php echo "$ ".number_format($sal,2); ?></td>
 				      <?php
 				      } ?>
 				      <td><center><a href="balanza/eliminar_reg.php?no=<?php echo $id; ?>" > <button type="button" class="btn " onclick="return Confirmation()" ><i class="fas fa-trash-alt"></i></button> </a></center></td>
@@ -608,12 +527,56 @@
 			  	?>
 			  		<tr class="titulotabla">
 			  			<td> <strong>Saldo por errores y omisiones</strong> </td>
-			  			<td align="right"><?php echo number_format($ingreEO,2); ?></td>
-			  			<td align="right"><?php echo number_format($pagEO,2); ?></td>
-			  			<td align="right"><?php echo number_format($salEO,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($ingreEO,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($pagEO,2); ?></td>
+			  			<td align="right"><?php echo "$ ".number_format($salEO,2); ?></td>
 			  		</tr>
 			  	</tfoot>
 			</table>
+		<!--  -->
+
+		<!-- total-->
+			<table class="table">
+				<thead align="center">
+				    <tr class="titulotabla">
+				      <th >Saldos Totales de la balanza</th>
+				      <th scope="col">Ingresos</th>
+				      <th scope="col">Pagos</th>
+				      <th scope="col">Saldos</th>
+
+				      <th><button type="button" class="btn btn-info " ><i class="fas fa-edit" aria-hidden="true"></i></button></th>
+				    </tr>
+			  	</thead>
+			  	<tbody>
+			    	<?php 
+			    	$In = "SELECT SUM(ingresos) FROM `regbalanza` where nom_us='$nombre'";
+			    	$pa = "SELECT SUM(pagos) FROM `regbalanza` where nom_us='$nombre'";
+			    	$sal = "SELECT SUM(saldos) FROM `regbalanza` where nom_us='$nombre'";
+					$resIn = mysqli_query($conexion, $In);
+					$respa = mysqli_query($conexion, $pa);
+					$ressal = mysqli_query($conexion, $sal);
+		                $datoIn = $resIn->fetch_assoc();
+		                $datopa = $respa->fetch_assoc();
+		                $datosal = $ressal->fetch_assoc();
+		              if(isset($datoIn['SUM(ingresos)']) && isset($datopa['SUM(pagos)']) && isset($datosal['SUM(saldos)'])){
+		                $mosIn = $datoIn['SUM(ingresos)'];
+		                $mospa = $datopa['SUM(pagos)'];
+		                $mossal = $datosal['SUM(saldos)'];
+		              }else{
+		                $mosIn="0";
+		                $mospa="0";
+		                $mossal="0";
+		                } 
+	                ?>
+				    <tr align="right">
+				      <th >Saldos Totales de la balanza</th>
+				      <th scope="col"><?php echo "$ ".number_format($mosIn,2); ?></th>
+				      <th scope="col"><?php echo "$ ".number_format($mospa,2); ?></th>
+				      <th scope="col"><?php echo "$ ".number_format($mossal,2); ?></th>
+				    </tr>
+			  	</tbody>
+			</table>
+		<!--  -->	
 
 		<!-- botones de descarga  -->
 			<?php 
@@ -831,66 +794,6 @@
               </div>
         <!-- fin de modal 3 -->
 
-        <!-- modal 4-->
-            <div id="test4" class="modal fade" role="dialog" style="z-index: 1400;">
-              <div class="modal-dialog " >
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header" style="background: #1B396A; color: #fff;">
-                    <h5 class="modal-title">Formulario de registro</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  
-                  <div class="modal-body">
-                    <!-- formulario -->
-					<form action="balanza/registro.php" method="POST">
-						<div  class="form-group row" hidden="true">
-					    	<label for="tipo" class="col-sm-2 col-form-label">Tipo: </label>
-					    <div class="col-sm-10">
-					      	<input type="text" class="form-control" id="tipo" name="tipo" value="BP">
-					    </div>
-					  </div>
-						<div class="form-group row">
-					    	<label for="concepto" class="col-sm-2 col-form-label">Concepto: </label>
-					    <div class="col-sm-10">
-					      	<input type="text" class="form-control" id="concepto" name="concepto" placeholder="Ingrese concepto" required>
-					    </div>
-					  </div>
-					  <div class="form-group row">
-					    	<label for="ingresos" class="col-sm-2 col-form-label">Ingresos: </label>
-					    <div class="col-sm-10">
-					      	<input type="number" class="form-control " id="ingresosBP" name="ingresos" placeholder="Ingrese ingreso" value="0" onchange="sumarBP();">
-					    </div>
-					  </div>
-					  <div class="form-group row">
-					    	<label for="pagos" class="col-sm-2 col-form-label">Pagos: </label>
-					    <div class="col-sm-10">
-					      	<input type="number" class="form-control " id="pagosBP" name="pagos" placeholder="Ingrese pago" value="0" onchange="sumarBP();">
-					    </div>
-					  </div>
-					  <div class="form-group row">
-					    	<label for="saldos" class="col-sm-2 col-form-label">Saldos: </label>
-					    <div class="col-sm-10">
-					      	<input type="number" class="form-control" id="saldosBP" name="saldos" placeholder="Ingrese saldo" value="0" readonly>
-					    </div>
-					  </div>
-					  <div  class="form-group row" hidden="true">
-					    	<label for="nom_us" class="col-sm-2 col-form-label">Usuario: </label>
-					    <div class="col-sm-10">
-					      	<input type="text" class="form-control" id="nom_us" name="nom_us" value="<?php echo $nombre; ?>">
-					    </div>
-					  </div>
-					  <center><button type="submit" class="btn btn-primary mb-2">Confirmar</button></center>
-					</form>
-                    <!-- Fin formulario -->
-                    </div>  
-                  </div>      
-                </div>
-              </div>
-        <!-- fin de modal 4 -->
-
         <!-- modal 5-->
             <div id="test5" class="modal fade" role="dialog" style="z-index: 1400;">
               <div class="modal-dialog " >
@@ -999,12 +902,6 @@
     			var n2 = document.getElementById("pagosBF").value;
     			var resultado = (n1)-(n2);
     			document.getElementById("saldosBF").value = resultado;
-			}
-			function sumarBP(){
-				var n1 = document.getElementById("ingresosBP").value;
-    			var n2 = document.getElementById("pagosBP").value;
-    			var resultado = (n1)-(n2);
-    			document.getElementById("saldosBP").value = resultado;
 			}
 			function sumarEO(){
 				var n1 = document.getElementById("ingresosEO").value;

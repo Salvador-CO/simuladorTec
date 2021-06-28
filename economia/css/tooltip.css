@@ -1,0 +1,57 @@
+
+.avatar {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border: 1px solid #fff;
+  display: flex;
+  float: left;
+  margin-left: 50%;
+  margin-top: .5%;
+  background: #fff;
+  cursor: help;
+
+}
+
+.avatar::before,
+.avatar::after {
+  --scale: 0;
+  --arrow-size: 15px;
+  --tooltip-color: green;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+}
+
+.avatar::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+
+  content: attr(data-tooltip);
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: 190px;
+  background: #1B396A;
+}
+
+.avatar:hover::before,
+.avatar:hover::after {
+  --scale: 1;
+}
+
+.avatar::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: #1B396A;
+  transform-origin: top center;
+}

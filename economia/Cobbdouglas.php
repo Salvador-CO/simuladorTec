@@ -11,7 +11,6 @@
         <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
         
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-		<script src="librerias/ckeditor/ckeditor.js"></script>
 	</head>
 
 	<?php require "menueconomia.php" ?>
@@ -22,14 +21,9 @@
 	        <li class="breadcrumb-item active"></li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
-  	     <button  type="button" class="btn btn-outline-info"  ><a href="https://www.google.com.mx/imghp?hl=en&ogbl" style='text-decoration:none; color: #000;' target="_blank"><i class="far fa-images"></i></a> </button>
-        <textarea name="editor" id="editor">
-        </textarea>
+  	     
 
-        <script>
-            CKEDITOR.replace("editor");
-        </script>
-		<br>
+       
 		</div>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
 		   	
