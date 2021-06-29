@@ -15,16 +15,17 @@
 
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
-		<div class="container-fluid">
+		<div class="container-fluid" align="center">
 	    	<center><h1 class="mt-4">Elasticidad Ingreso - Demanda</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active">Pagina Principal</li>
+	        <li class="breadcrumb-item active"></li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
-			<h1>EJEMPLO</h1>
+			<iframe width="65%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21147&authkey=%21AHj5rXvQKw93oo4&em=2&AllowTyping=True&ActiveCell='Ingreso-demanda'!C5&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 		</div>
+		<br>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
-		   	<h1>EJEMPLO</h1>
+		   	
 
 	<!---->
 	   	</main>

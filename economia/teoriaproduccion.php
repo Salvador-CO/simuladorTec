@@ -125,7 +125,7 @@
                     </div>
                     <div class="footer">
                         <a  href="largoplazo.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a><br>
-                        <div class="avatar" align="center" data-tooltip="'---------------------' Cobb Douglas" title="Paneles Internos"></div>
+                        <div class="avatar" align="center" data-tooltip="produccion 2 insumos Cobb Douglas" title="Paneles Internos"></div>
                     </div>
                 </div>
 

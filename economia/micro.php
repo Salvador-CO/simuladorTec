@@ -122,7 +122,7 @@
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:25; height:25;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="5vw">Teroia de la producción</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="5vw">Teoria de la producción</font>
                         <div class="avatar" align="center" data-tooltip=" Corto y Largo Plazo Costos de producion Punto de equilibrio" title="Paneles Internos"></div>
                     </div>
                     <div class="footer">
