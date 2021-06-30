@@ -18,7 +18,8 @@
 		<div class="container-fluid">
 	    	<center><h1 class="mt-4">Cobb Douglas</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active"></li>
+	         <li class="breadcrumb-item active" style="text-align: justify;">
+                <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
   	     

@@ -96,7 +96,7 @@
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Teoria del consumidor</h1></center>
+	    	<center><h1 class="mt-4">Teoría del consumidor</h1></center>
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active">      </li>
 		</ol>
@@ -109,7 +109,7 @@
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Teoria de la utilidad total y marginal</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Teoría de la utilidad total y marginal</font>
                     </div>
                     <div class="footer">
                         <a  href="pun_saturacion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>

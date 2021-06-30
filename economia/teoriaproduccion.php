@@ -98,7 +98,7 @@
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Teoria de la produccion</h1></center>
+	    	<center><h1 class="mt-4">Teoría de la producción</h1></center>
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active">      </li>
 		</ol>
@@ -124,7 +124,7 @@
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw"> Largo Plazo </font>
                     </div>
                     <div class="footer">
-                        <a  href="largoplazo.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a><br>
+                        <a  href="largoplazo.php">Ver panel de opciones &nbsp;<i class="fas fa-angle-right" ></i></a><br>
                         <div class="avatar" align="center" data-tooltip="produccion 2 insumos Cobb Douglas" title="Paneles Internos"></div>
                     </div>
                 </div>
@@ -142,10 +142,10 @@
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Costos de producion</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Costos de produción</font>
                     </div>
                     <div class="footer">
-                        <a  href="costopromtotal.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a  href="costopromtotal.php">Ver panel de opciones &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
 

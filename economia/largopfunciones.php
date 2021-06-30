@@ -16,9 +16,10 @@
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Produccion con dos insumo variable</h1></center>
+	    	<center><h1 class="mt-4">Producción con dos insumo variable</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active"></li>
+	         <li class="breadcrumb-item active" style="text-align: justify;">
+                <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
 			<iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21143&authkey=%21AJ8F9H7ZjLPTQrg&em=2&AllowTyping=True&ActiveCell='largoplazo'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
