@@ -116,7 +116,7 @@
                         <div class="avatar" align="center" data-tooltip="Utilidad total y marginal Curvas de indiferencia Ingreso-Demanda Precion-Demanda" title="Paneles Internos"></div>
                     </div>
                     <div class="footer"> 
-                        <a href="teoriaconsumidor.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a href="teoriaconsumidor.php">Ver panel de opciones &nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>
 
@@ -127,7 +127,7 @@
                         <div class="avatar" align="center" data-tooltip=" Corto y Largo Plazo Costos de producion Punto de equilibrio" title="Paneles Internos"></div>
                     </div>
                     <div class="footer">
-                        <a  href="teoriaproduccion.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a  href="teoriaproduccion.php">Ver panel de opciones&nbsp;<i class="fas fa-angle-right" ></i></a>
                     </div>
                 </div>                
 

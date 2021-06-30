@@ -116,7 +116,7 @@
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Área de uso general</font>
                     </div>
                     <div class="footer" >
-                        <a href="areausogeneral.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a href="areausogeneral.php">Ver panel de opciones &nbsp;<i class="fas fa-angle-right" ></i></a>
                         <br>
                         <div class="avatar" align="center" data-tooltip="Procesador de texto  Area para Graficar Regresión lineal" title="Paneles Internos"></div>
                     </div>
@@ -128,7 +128,7 @@
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Microeconomía</font>
                     </div>
                     <div class="footer">
-                        <a  href="micro.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a  href="micro.php">Ver panel opciones &nbsp;<i class="fas fa-angle-right" ></i></a>
                         <br>
                         <div class="avatar" align="center" data-tooltip="Teoria del consumidor Teroia de la producción" title="Paneles Internos"></div>
                     </div>
@@ -140,7 +140,7 @@
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Macroeconomía</font>
                     </div>
                     <div class="footer">
-                        <a href="macro.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a href="macro.php">Ver panel de opciones &nbsp;<i class="fas fa-angle-right" ></i></a>
                         <br>
                         <div class="avatar" data-tooltip="Posibilidades/producción Cuentas nacionales. Modelo Keynesiano. Modelo IS - LM." title="Paneles Internos"></div>
                     </div>
@@ -152,7 +152,7 @@
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Internacional</font>
                     </div>
                     <div class="footer">
-                        <a href="internacional.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>
+                        <a href="internacional.php">Ver panel de opciones &nbsp;<i class="fas fa-angle-right" ></i></a>
                         <br>
                         <div class="avatar" align="center" data-tooltip="..Balanza de pagos.. ..Tipo de cambio.." title="Paneles Internos"></div>
                     </div>

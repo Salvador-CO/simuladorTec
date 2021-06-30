@@ -119,7 +119,7 @@
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-chart-line"style="color:#FFFFFF; width:20; height:20;" ></i> 
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Area para Graficar</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Área para Graficar</font>
                     </div>
                     <div class="footer">
                         <a  href="graficasgen.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>

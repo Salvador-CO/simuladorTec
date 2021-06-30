@@ -56,18 +56,20 @@
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Area general para graficar <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
+	    	<center><h1 class="mt-4">Área general para graficar <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active">&nbsp;</li>
+	         <li class="breadcrumb-item active" style="text-align: justify;">
+                <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
 			
 			<iframe width="100%" height="450" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21135&authkey=%21AHTTAKQNRE51fww&em=2&AllowTyping=True&ActiveCell='Grafica_General'!B4&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 			<br>
 			<br>
-			<center><h1>Grafica para ecucaciones o funciones matematicas <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba1"><i class="fas fa-question"></i></button></h1></center>
+			<center><h1>Gráfica para ecucaciones o funciones matemáticas <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba1"><i class="fas fa-question"></i></button></h1></center>
 			<ol class="breadcrumb mb-4">
-	        	<li class="breadcrumb-item active"> &nbsp;</li>
+	        	 <li class="breadcrumb-item active" style="text-align: justify;">
+                <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
 			</ol>
 			<iframe src="graficagen/calculator.html" width="100%" height="600"  frameborder="0"></iframe>
 			<br><br><br>
