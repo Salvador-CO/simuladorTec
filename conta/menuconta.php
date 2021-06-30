@@ -167,14 +167,25 @@
                             </a>
                                 <div class="collapse" id="economia" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="../economia/espacioredaccion.php">Area de uso general</a>
-                                        <a class="nav-link" href="../economia/regresionlineal.php">Regresion lineal</a>
+                                        <a class="nav-link" href="../economia/espacioredaccion.php">Procesador de texto</a>
+                                        <a class="nav-link" href="../economia/graficasgen.php">Área para graficar</a>
+                                        <a class="nav-link" href="../economia/regresionlineal.php">Regresión lineal</a>
+                                        <a class="nav-link" href=".. /economia/pun_saturacion.php">Teoría de la utilidad total y marginal</a>
+                                        <a class="nav-link" href="../economia/curvasindiferencia.php">Curvas de indiferencia</a>
+                                        <a class="nav-link" href="../economia/elasInDem.php">Elasticidad Ingreso-Demanda</a>
+                                        <a class="nav-link" href="../economia/elasPreDem.php">Elasticidad Precio-Demanda</a>
+                                        <a class="nav-link" href="../economia/cortoplazo.php">Corto plazo</a>
+                                        <a class="nav-link" href="../economia/largopfunciones.php">Producción con 2 insumos</a>
+                                        <a class="nav-link" href="../economia/Cobbdouglas.php">Cobb Douglas</a>
+                                        <a class="nav-link" href="../economia/punt_equilibrio.php">Punto Punto de equilibrio del mercado</a>
+                                        <a class="nav-link" href="../economia/costotal.php">Costos totales</a>
+                                        <a class="nav-link" href="../economia/costoprom.php">Corto promedio</a>
+                                        <a class="nav-link" href="../economia/pos_producion.php">Posibilidades de producción</a>
+                                        <a class="nav-link" href="../economia/cuentasnacionales.php">Cuentas nacionales</a>
+                                        <a class="nav-link" href="../economia/keynesiano.php">Modelo Keynesiano</a>
                                         <a class="nav-link" href="../economia/modelo_islm.php">Modelo IS-LM</a>
                                         <a class="nav-link" href="../economia/balanzap.php">Balanza de pagos</a>
-                                        <a class="nav-link" href="../economia/pos_producion.php">Posibilidades de produccion</a>
-                                        <a class="nav-link" href="../economia/pun_saturacion.php">Punto de saturacion</a>
-                                        <a class="nav-link" href="../economia/punt_equilibrio.php">Punto de equilibrio</a>
-                                        <a class="nav-link" href="../economia/Cobbdouglas.php">Cobb Douglas</a>
+                                        <a class="nav-link" href="../economia/tipo_cambio.php">Tipo de cambio</a> 
                                     </nav>
                                 </div>
                         <!--fin del menu de Economia-->
