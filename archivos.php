@@ -270,10 +270,10 @@ if (isset($_POST['subir'])) {
                     <th>Equipo/Usuario</th>
                     <th >Area</th>
                     <th>Actividad</th>
-                    <th>nom_archivo</th>
+                    <th>Nombre del archivo</th>
                     <th>Descripcion</th>
                     
-                    <th>opciones</th>
+                    <th>Opciones</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -349,10 +349,10 @@ if (isset($_POST['subir'])) {
                   <tr align="center" >
                     <th >Area</th>
                     <th>Actividad</th>
-                    <th>nom_archivo</th>
+                    <th>Nombre de archivo</th>
                     <th>Descripcion</th>
-                    <th>tipo</th>
-                    <th>opciones</th>
+                    <th>Tipo</th>
+                    <th>Opciones</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -109,7 +109,7 @@
                 <div class="child">
                     <div class="titu">
                         <i class="fas fa-book"style="color:#FFFFFF; width:20; height:20;" ></i>  
-                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Produccion con 2 insumos</font>
+                        <font face="Bookman Old Style, Book Antiqua, Garamond" size="4vw">Producción con 2 insumos</font>
                     </div>
                     <div class="footer">
                         <a href="largopfunciones.php">Ver panel &nbsp;<i class="fas fa-angle-right" ></i></a>

@@ -112,6 +112,7 @@
                     <div class="titu">
                         <i class="fas fa-book"style="color:#FFFFFF; width:25; height:25;" ></i>  
                         <font face="Bookman Old Style, Book Antiqua, Garamond" size="5vw">Teoria del consumidor</font>
+                        <br>
                         <div class="avatar" align="center" data-tooltip="Utilidad total y marginal Curvas de indiferencia Ingreso-Demanda Precion-Demanda" title="Paneles Internos"></div>
                     </div>
                     <div class="footer"> 

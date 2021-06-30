@@ -8,20 +8,47 @@
         <link href="../css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <title>Curvas de indiferencia</title>
-        <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png">
-        
+        <link rel="icon" type="image/png" sizes="192x192"  href="../iconos/tecnm.png"> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+		<style type="text/css">
+			.btn-circle {
+              width: 30px;
+              height: 30px;
+              padding: 6px 0px;
+              border-radius: 15px;
+              text-align: center;
+              font-size: 12px;
+              line-height: 1.42857;
+            }
+		</style>
 	</head>
+	    <!-- modal de instruccines -->
+        <div id="btnPrueba" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
+            <div class="modal-dialog modal-lg" role="dialog" >
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
+                            <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
+                    </div>
+                  <div class="modal-body">
+                   <!--   contenido -->
+                    <embed src="../manual/Regresión.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+                  </div>      
+                </div>
+            </div>
+        </div>
 
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Curvas de indiferencia</h1></center>
+	    	<center><h1 class="mt-4">Curvas de indiferencia <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active"></li>
+	        <li class="breadcrumb-item active">&nbsp;</li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
 			<iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21141&authkey=%21AEjuBqSiQSRn9fs&em=2&AllowTyping=True&ActiveCell='Curvas'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+			<br><br>
+
 		</div>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
 
