@@ -94,6 +94,7 @@
 					<div class="panel1">
 						<form method="POST" action="balanza/guardartitulo.php" >
 							<div class="row uniform">
+								<div class="form-group col-md-2"></div>
 								<div class="form-group col-md-4">
 									<label>Nombre o denominación social de la entidad:</label>
 									<input type="text" name="empresa" id="empresa" value=""  class="form-control"/>
@@ -104,7 +105,7 @@
 									<input type="text" name="fec" id="fec" class="form-control" />
 															
 								</div>
-								<div class="form-group col-md-4">
+								<div class="form-group col-md-4" hidden="true">
 									<label>Autorizador por:</label>
 									<input type="text" name="aut" id="aut" class="form-control"/>
 								</div>

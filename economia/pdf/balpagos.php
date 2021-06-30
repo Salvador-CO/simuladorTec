@@ -278,8 +278,7 @@ $sql= "SELECT * FROM `regbalanza` WHERE `tipo`='EO' && `nom_us`= '$nombre' ";
 	 
 
 	$pdf->Ln();$pdf->Ln();
-	$pdf->Cell(260,10,utf8_decode('AUTORIZADO POR'), 0, 1, 'C');
-	$pdf->Cell(260,10,utf8_decode($GLOBALS['firma'] ), 0, 1, 'C');
+	
 	$pdf->SetX(90);
 	$pdf->Cell(100,10,'','T',0,'C');
 	$pdf->Ln();	

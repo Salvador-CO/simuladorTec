@@ -96,7 +96,7 @@
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Economia internacional</h1></center>
+	    	<center><h1 class="mt-4">Economía internacional</h1></center>
 	    <ol class="breadcrumb mb-4">
 	        <li class="breadcrumb-item active">      </li>
 		</ol>

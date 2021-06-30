@@ -43,7 +43,8 @@
 		<div class="container-fluid" align="center">
 	    	<center><h1 class="mt-4">Tipo de cambio</h1></center>
 	    <ol class="breadcrumb mb-4">
-	        <li class="breadcrumb-item active"></li>
+	         <li class="breadcrumb-item active" style="text-align: justify;">
+                <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
 		</ol>
 		<!--Contenido dentro del div con margen-->
 			<script type="text/javascript"   src="https://es.exchange-rates.org/GetCustomContent.aspx?sid=CC000QI6V&amp;type=CurrencyConverter&amp;stk=-02RDFU91RV" charset="utf-8">
