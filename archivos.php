@@ -13,7 +13,7 @@ if (isset($_POST['subir'])) {
             $area= $_POST['area'];
             $acti= $_POST['acti'];
             if (empty($_POST['descri'])) {
-                $descri= "sin descripcion ";
+                $descri= "Sin descripción ";
             }else{
                 $descri= $_POST['descri'];
             }
@@ -71,7 +71,7 @@ if (isset($_POST['subir'])) {
 		<!--Titulo-->
         <?php if($tipo_usuario == 2) { ?>
 		<div class="container-fluid">
-	    	<center><h1 class="mt-4">Carga de Archivo Finales</h1></center>
+	    	<center><h1 class="mt-4">Carga de Archivos Finales</h1></center>
     	    <ol class="breadcrumb mb-4">
     	        <li class="breadcrumb-item active" style="text-align: justify;"><b>Instrucciones: </b> En este apartado podrás subir los archivos correspondientes a cada actividad del Reactivo Integrador Multidisciplina (RIM), recuerda que deben estar en formato PDF. </li>
     		</ol>
@@ -107,13 +107,13 @@ if (isset($_POST['subir'])) {
                                 </div>
 
                                 <div class="col-6 mb-3">
-                                  <label for="acti">Numero de la actividad<strong>*</strong></label>
+                                  <label for="acti">Número de la actividad<strong>*</strong></label>
                                 <div class="input-group">
                                   <div class="input-group-prepend">
                                     <span class="input-group-text">Actividad:</span>
                                   </div>
                                   <input type="number" class="form-control" id="acti" name="acti" placeholder="1.1.1" step="any" required >
-                                  <div class="invalid-tooltip">Ingresa el número de actividad.
+                                  <div class="invalid-tooltip">Ingresa el número de actividad
                                   </div>
                                 </div>
                                 </div>
@@ -153,7 +153,7 @@ if (isset($_POST['subir'])) {
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Descripcion</label>
+                                <label for="exampleFormControlTextarea1">Descripción</label>
                                 <textarea class="form-control" rows="2" id="descri" name="descri"></textarea>
                             </div>
 
@@ -164,7 +164,7 @@ if (isset($_POST['subir'])) {
                             </div>
                             <hr>
                             <center>
-                            <input type="submit" class="btn btn-primary" value="subir" name="subir">
+                            <input type="submit" class="btn btn-primary" value="Subir" name="subir">
                             </center>                           
                         </form>
 
@@ -179,17 +179,19 @@ if (isset($_POST['subir'])) {
         <div class="container-fluid">
             <center><h1 class="mt-4">Archivos Finales</h1></center>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item active" style="text-align: justify;">
-                </li>
+                <li class="breadcrumb-item active">Este aparatado es único para el administrador, aquí podras consultar los archivos cargados por equipos, en donde deberas seleccionar el nombre del equipo y el área, de lo contrario te aparecera un registro global de todos los equipos.</li>
             </ol>
         </div>   
         <?php } ?>
 
     <?php if ($tipo_usuario==1){
     ?> <!-- parde del administrador -->
-    <div class="formbus">
+    <div class="formbus" align="center">
         <form method="POST" action="" >
-            <div class="form-row">                
+            <div class="form-row">
+                <div class="col-md-1 mb-3">
+                    
+                </div>                
                 <div class="col-md-4 mb-3"> 
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="us">
                         <option value="NULL"></option>
@@ -203,9 +205,11 @@ if (isset($_POST['subir'])) {
                             <?php echo $misdatos["id_us"]; ?></option>
                         <?php }?>
                     </select>
+                    <label><i>Selecciona usuario</i></label>
                 </div> 
 
-                <div class="col-md-4 mb-3"> 
+                <div class="col-md-4 mb-3">
+                    
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="area">
                         <option value="NULL"></option>
                          <?php
@@ -217,9 +221,10 @@ if (isset($_POST['subir'])) {
                         <option value="<?php echo $misdatos["area"];?>"><?php echo $misdatos["area"]; ?></option>
                         <?php }?>
                     </select>
+                    <label><i>Selecciona área</i></label> 
                 </div>
 
-                <div class="col-md-4 mb-3">
+                <div class="" align="center">
                     <input type="submit"  value="Buscar" class="btn btn-dark" />
                     <input type="reset" value="Limpiar" class="btn btn-dark">
                 </div>
@@ -260,7 +265,7 @@ if (isset($_POST['subir'])) {
 
         $consultabus = mysqli_query($conexion, $sqlbus);
         if($consultabus->num_rows === 0) {
-        echo "No hay resultados <br><br><br>";
+        echo " <br><br><br>";
         } else {
         ?>
         <div class="table-responsive">  
@@ -268,12 +273,12 @@ if (isset($_POST['subir'])) {
                 <thead class="thead-dark">
                   <tr align="center" >
                     <th>Equipo/Usuario</th>
-                    <th >Area</th>
+                    <th>Área</th>
                     <th>Actividad</th>
                     <th>Nombre del archivo</th>
-                    <th>Descripcion</th>
+                    <th>Descripción</th>
                     
-                    <th>Opciones</th>
+                    <th>Acciones</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -340,19 +345,19 @@ if (isset($_POST['subir'])) {
         $sql = "SELECT * FROM file WHERE id_us ='$nombre' ";
         $consulta = mysqli_query($conexion, $sql);
         if($consulta->num_rows === 0) {
-        echo "No hay resultados <br><br><br>";
+        echo " <br><br><br>";
         } else {
         ?>
         <div class="table-responsive">  
             <table class="table table-striped ">
                 <thead class="thead-dark">
                   <tr align="center" >
-                    <th >Area</th>
+                    <th>Área</th>
                     <th>Actividad</th>
                     <th>Nombre de archivo</th>
-                    <th>Descripcion</th>
+                    <th>Descripción</th>
                     <th>Tipo</th>
-                    <th>Opciones</th>
+                    <th>Acciones</th>
                   </tr>
                 </thead>
                 <tbody>

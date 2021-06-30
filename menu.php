@@ -100,11 +100,12 @@
                                         <a class="nav-link" href="conta/libro_mayor.php">Libro mayor</a>
                                         <a class="nav-link" href="conta/balanza_comprobacion.php">Balanza de comprobación</a>
                                         <a class="nav-link" href="conta/estado_resultados.php">Estado de resultados</a>
-                                        <a class="nav-link" href="conta/balance_general.php">Balance general</a>
+                                        <a class="nav-link" href="conta/balance_general.php">Estado de situación financiera</a>
                                         <a class="nav-link" href="conta/flujo_efectivo.php">Estado de flujos de efectivo</a>
                                         <a class="nav-link" href="conta/variacion_capcontable.php">Estado de variaciones en el capital contable</a>
                                         <a class="nav-link" href="conta/costos_prodvent.php">Estado de costos de producción y venta</a>
                                         <a class="nav-link" href="conta/analisis_financiero.php">Análisis financiero</a>
+                                        <a class="nav-link" href="conta/tecnicas_proyectos.php">Técnicas de evaluación de proyectos</a>
                                     </nav>
                                 </div>
                         <!--fin del menu de conta-->
@@ -190,7 +191,7 @@
                 <!--footer del menu-->
                 <div class="sb-sidenav-footer">
                     <div class="text-muted">
-                    <font size="1" face="Garamond" color="#E5E7E9">Copyright &copy; Todos los derechos reservados <b>DASHA | Tecnológico Nacional de México</b></font>
+                    <font size="1" face="Garamond" color="#E5E7E9">Copyright &copy; Todos los derechos reservados <b>DASA | Tecnológico Nacional de México</b></font>
                     </div>
     			</div><!--fin footer del menu-->
     		</nav>

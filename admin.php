@@ -27,9 +27,9 @@
 
          
         <div class="container-fluid">
-            <center><h1> Panel de Usuarios</h1></center>
+            <center><h1> Registro de Usuarios</h1></center>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">Este aparatado es único para el administrador en el cual se observan los usuarios que se han registrado con la finalidad de poder tener un control.</li>
+            <li class="breadcrumb-item active">Este aparatado es único para el administrador, en el cual se observan los usuarios registrados con la finalidad de tener un control de los accesos al simulador.</li>
         </ol>
         
         <!-- tabla -->
@@ -53,7 +53,7 @@
                     <th>Nombre</th>
                     <th>Correo</th>
                     <th>Escuela</th>
-                    <th>Telefono</th>
+                    <th>Teléfono</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -127,19 +127,19 @@
     
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                              <label for="validationCustom01">Equipo / Nombre <strong>*</strong></label>
-                              <input type="text" class="form-control" id="validationCustom01" name="nom" placeholder="First name"  required title="Three letter country code">
+                              <label for="validationCustom01">Equipo/Nombre <strong>*</strong></label>
+                              <input type="text" class="form-control" id="validationCustom01" name="nom" placeholder="Equipo/Nombre"  required title="Three letter country code">
                               <div class="invalid-feedback" title="Three letter country code">Ingresa un nombre o equipo </div>
                             </div>
 
                             <div class="col-md-6 mb-3">
-                              <label for="validationCustom02">Telefono </label>
-                              <input type="text" class="form-control" id="validationCustom02" name="tel" placeholder="Telefono" >
+                              <label for="validationCustom02">Teléfono </label>
+                              <input type="text" class="form-control" id="validationCustom02" name="tel" placeholder="Teléfono" >
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleDataList" class="form-label">Selecciona una escuela <strong>*</strong></label>
+                            <label for="exampleDataList" class="form-label">Selecciona una institución <strong>*</strong></label>
                             <input class="form-control" list="datalistOptions" id="exampleDataList" name="escuela" placeholder="Escribe para buscar..." required>
                             <datalist id="datalistOptions" data-show-subtext="true">
                             <?php
@@ -151,19 +151,19 @@
                               <option value="<?php echo $misdatos["nombre"]; ?>"></option>
                             <?php }?>    
                             </datalist>
-                            <div class="invalid-feedback">Selecciona una Institucion</div>
+                            <div class="invalid-feedback">Selecciona una institución</div>
                         </div>
 
                         <div class="form-row">
                             <div class="col-md-12 mb-3">
-                              <label for="validationCustomUsername">Correo electronico <strong>*</strong></label>
+                              <label for="validationCustomUsername">Correo electrónico <strong>*</strong></label>
                               <div class="input-group">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="inputGroupPrepend">@</span>
                                 </div>
-                                <input type="email" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" name="correo" required >
+                                <input type="email" class="form-control" id="validationCustomUsername" placeholder="Ingresa correo electrónico" aria-describedby="inputGroupPrepend" name="correo" required >
                                 <div class="invalid-feedback">
-                                  Ingresa un correo valido
+                                  Ingresa un correo electrónico valido
                                 </div>
                               </div>
                             </div>
@@ -172,7 +172,7 @@
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                               <label for="validationCustom03">Usuario <strong>*</strong></label>
-                              <input type="text" class="form-control" id="us" name="us" placeholder="First name"  pattern="^([a-z]+[0-9]{0,4}){5,10}$" required title="Usuario valido entre 5 y 10 caracteres sin espacios ni caracteres especiales (.,-/*´+_)">
+                              <input type="text" class="form-control" id="us" name="us" placeholder="Ingresa nombre de usuario"  pattern="^([a-z]+[0-9]{0,4}){5,10}$" required title="Usuario valido entre 5 y 10 caracteres sin espacios, mayusculas, ni caracteres especiales (.,-/*´+_)">
                               <div class="invalid-feedback">Ingresa un usuario</div>
                             </div>
 
@@ -195,7 +195,7 @@
                         </div>
                         <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="tipo" id="inlineRadio2" value="2" required>
-                        <label class="form-check-label" for="inlineRadio2">Simple mortal</label>
+                        <label class="form-check-label" for="inlineRadio2">Concursante</label>
                         </div>
                         <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="tipo" id="inlineRadio3" value="3" disabled >

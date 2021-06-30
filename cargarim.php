@@ -15,7 +15,7 @@
 		<div class="container-fluid">
 	    	<center><h1 class="mt-4">Carga de Archivo para RIM</h1></center>
     	    <ol class="breadcrumb mb-4">
-    	        <li class="breadcrumb-item active" style="text-align: justify;"><b>Instrucciones: </b> En este apartado podrás subir los archivos correspondientes a cada actividad del Reactivo Integrador Multidisciplina (RIM), recuerda que deben estar en formato PDF. </li>
+    	        <li class="breadcrumb-item active" style="text-align: justify;">En este apartado podrás subir los archivos correspondientes al Reactivo Integrador Multidisciplina (RIM), asiendose visible en cada una de las sesiones de los usuarios. </li>
     		</ol>
       <div class="content"> </div>
       <!-- Formulario -->
@@ -23,11 +23,11 @@
           <div class="col-lg-6">
             <form method="POST" action="CargarFicheros.php" enctype="multipart/form-data">
             <div class="form-group">
-                <label class="btn " style="background: #1B396A; color: #fff;" for="my-file-selector">
+                <label class="btn btn-dark" style=" #1B396A; color: #fff;" for="my-file-selector">
                   <input required type="file" name="file" id="exampleInputFile" >
                 </label>
             </div>
-            <button class="btn " style="background: #1B396A; color: #fff;"  type="submit">Cargar Archivo</button>
+            <button class="btn btn-dark" style=" color: #fff;"  type="submit">Cargar Archivo</button>
             </form>
           </div>
           <div class="col-lg-6"> </div>
@@ -35,11 +35,11 @@
       <hr style="margin-top:5px;margin-bottom: 5px;">
       <!--tabla-->
         <table class="table table-striped" >
-              <thead style="background: #002F6C ; color: #fff;" >
+              <thead style=" color: #fff;" class="thead-dark" >
                 <tr align="center">
-                  <th width="7%">#</th>
+                  <th width="7%">Número</th>
                   <th width="70%">Nombre del Archivo</th>
-                  <th colspan="3" >Descargar</th>
+                  <th colspan="3" >Acciones</th>
                 </tr>
               </thead>
               <tbody>
