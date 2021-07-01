@@ -30,6 +30,7 @@
                     <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
                             <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
                     </div>
+                    
                   <div class="modal-body">
                    <!--   contenido -->
                     <embed src="../manual/Regresión.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
@@ -46,6 +47,15 @@
 	         <li class="breadcrumb-item active" style="text-align: justify;">
                 <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>
 		</ol>
+
+    <div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
+            <ul class="list-unstyled" style="margin-bottom: 0;">
+              <li><strong>Nota:</strong> En la parte inferior derecha podras descargar el archivo <i class="fas fa-file-download"></i> 
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+    </div>
 		<!--Contenido dentro del div con margen-->
 			<iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21141&authkey=%21AEjuBqSiQSRn9fs&em=2&AllowTyping=True&ActiveCell='Curvas'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 			<br><br>
