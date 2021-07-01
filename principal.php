@@ -18,6 +18,9 @@
                 text-align: center;
 
             }
+            .cont{
+                
+            }
         </style>
 	</head>
     <?php require "menu.php" ?>
@@ -139,21 +142,10 @@
     ?> 
     <!--PARTE DE ADMINISTRADOR  -->
         <!--fin de ROW-->
+        <div class="cont" align="center">
         <div class="row justify-content-center">
                 <div class="col-xl-3 col-md-6">
-                    <div class="card text-white mb-4" style="background: #002F6C">
-                        <div class="card-body">
-                            <i class="fas fa-user-plus" style="color:#FFFFFF; width:20; height:20;" ></i> 
-
-                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Registro de usuarios</font>
-                        </div>
-                        <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="admin.php">Ver panel </a>
-                            <div class="small text-white">
-                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                  
                 <div class="col-xl-3 col-md-6"> 
@@ -172,6 +164,32 @@
                 </div>
 
                 <div class="col-xl-3 col-md-6">
+                    
+                </div>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card text-white mb-4" style="background: #002F6C">
+                        <div class="card-body">
+                            <i class="fas fa-user-plus" style="color:#FFFFFF; width:20; height:20;" ></i> 
+
+                            <font face="Bookman Old Style, Book Antiqua, Garamond" size="4">Registro de usuarios</font>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="admin.php">Ver panel </a>
+                            <div class="small text-white">
+                            <i class="fas fa-angle-right" style="color:#fff; width:20; height:20;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-xl-3 col-md-6"> 
+                    
+
+                </div>
+
+                <div class="col-xl-3 col-md-6">
                     <div class="card text-white mb-4" style="background: #002F6C">
                         <div class="card-body">
                             <i class="fas fa-upload"style="color:#FFFFFF; width:20; height:20;" ></i> 
@@ -184,7 +202,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>      
+        </div>
+        <img src="img/teclogo.png" alt="" width="130px">
         </div>
         <!--fin de ROW-->
 
