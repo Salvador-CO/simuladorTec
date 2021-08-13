@@ -33,7 +33,7 @@
                     </div>
                   <div class="modal-body">
                    <!--   contenido -->
-                    <embed src="../manual/Regresión.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+                    <embed src="../manual/cobb.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
                   </div>      
                 </div>
             </div>
@@ -51,11 +51,16 @@
             <ul class="list-unstyled" style="margin-bottom: 0;">
               <li><strong>Nota:</strong> En la parte inferior derecha podras descargar el archivo <i class="fas fa-file-download"></i> 
             </ul>
+            <ul class="list-unstyled" style="margin-bottom: 0; text-align: center;" >
+              <li><h4>
+                <strong>Nota:</strong> L<sup>1/2</sup> * K<sup>1/2</sup> = x<sup>1/2</sup> * y<sup>1/2</sup> = <strong>x^(1/2) * y^(1/2)</strong>.</h4>
+              </li>
+            </ul>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
     	</div>
-		<!--Contenido dentro del div con margen-->
+		<!--Contenido dentro del div con margen
   	    <div class="alert alert-info alert-dismissible fade show" style="font-size: 14px;" role="alert">
             <ul class="list-unstyled" style="margin-bottom: 0; text-align: center;" >
               <li><h4>
@@ -65,12 +70,15 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
-        </div>
+        </div>-->
+    <br>
 		<div id="WolframAlphaScript9ba0f9d7ed8bb1b3e17fba90f38af365"></div>
 
   	<script type="text/javascript" id="WolframAlphaScriptbabad159dbd55bca0f09b41017605b7d" src="//www.wolframalpha.com/widget/widget.jsp?id=babad159dbd55bca0f09b41017605b7d"></script>
 
+  	<br><!-- Insercion de las plantillas de excel -->
   	<iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21155&authkey=%21AF7ttG1GBNNxvSU&em=2&AllowTyping=True&ActiveCell='coodduglas'!A5&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+  	
   	<br>
   	<br>
   	<center><a href="../anexos/coodduglas.docx" download>Download Text</a></center>

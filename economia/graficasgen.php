@@ -32,26 +32,12 @@
                 </div>
               <div class="modal-body">
                <!--   contenido -->
-                <embed src="../manual/Regresión.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+                <embed src="../manual/grafica.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
               </div>      
             </div>
         </div>
     </div>
-    <!-- modal de instruccines -->
-    <div id="btnPrueba1" class="modal fade" style="z-index: 1400;" data-target="#btnPrueba">
-        <div class="modal-dialog modal-lg" role="dialog" >
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div style="background: #1B396A; color: #fff; height: 75px;padding-left: 40px;">
-                        <p><h3 class="modal-title col-11 text-center">Ayuda</h3></p>
-                </div>
-              <div class="modal-body">
-               <!--   contenido -->
-                <embed src="../manual/Regresión1.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
-              </div>      
-            </div>
-        </div>
-    </div>
+
 
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
@@ -75,7 +61,7 @@
 			<iframe width="100%" height="450" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21135&authkey=%21AHTTAKQNRE51fww&em=2&AllowTyping=True&ActiveCell='Grafica_General'!B4&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 			<br>
 			<br>
-			<center><h1>Gráfica para ecucaciones o funciones matemáticas <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba1"><i class="fas fa-question"></i></button></h1></center>
+			<center><h1>Gráfica para ecucaciones o funciones matemáticas</h1></center>
 			<ol class="breadcrumb mb-4">
 	        	 <li class="breadcrumb-item active" style="text-align: justify;">
                 <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>

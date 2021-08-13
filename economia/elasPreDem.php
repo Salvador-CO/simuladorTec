@@ -35,7 +35,7 @@
                     
                   <div class="modal-body">
                    <!--   contenido -->
-                    <embed src="../manual/Regresión.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+                    <embed src="../manual/elaspre.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
                   </div>      
                 </div>
             </div>

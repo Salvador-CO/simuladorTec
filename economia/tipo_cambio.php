@@ -68,7 +68,7 @@
 	<?php require "menueconomia.php" ?>
 		<!--Titulo-->
 		<div class="container-fluid" align="center">
-	    	<center><h1 class="mt-4">Tipo de cambio <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#btnPrueba"><i class="fas fa-question"></i> </button></h1></center>
+	    	<center><h1 class="mt-4">Tipo de cambio </h1></center>
 	    <ol class="breadcrumb mb-4">
 	         <li class="breadcrumb-item active" style="text-align: justify;">
                 <b> Instrucciones:</b> Este apartado será utilizando para la solución de los ítems de carácter general solicitados en el Reactivo Integrador Multidisciplina (RIM). Así mismo, al terminar de realizar tu ejercicio deberás descargarlo en formato PDF para posteriormente poder subirlo en el apartado “Carga de archivos”.</li>

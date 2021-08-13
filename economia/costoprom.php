@@ -34,7 +34,7 @@
                     </div>
                   <div class="modal-body">
                    <!--   contenido -->
-                    <embed src="../manual/Regresión.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+                    <embed src="../manual/costop.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
                   </div>      
                 </div>
             </div>
@@ -60,7 +60,8 @@
 
 		<!--Contenido dentro del div con margen-->
 			<iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=EC0CFE9AF404B4F8%21142&authkey=%21AEzldapsf81oG3c&em=2&AllowTyping=True&ActiveCell='Hoja1'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
-		</div>
+      
+		</div><br>
 			<!--Contenido Fuera del div para q crees lo q quiera o en el anteriri ajja -->
 		   
 
